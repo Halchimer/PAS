@@ -10,7 +10,10 @@ namespace PAS.Content.Widgets
 {
     internal class MainMenuSkyBG : Actor
     {
-        public MainMenuSkyBG(): base() {}
+        public MainMenuSkyBG(): base() 
+        {
+            sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("sky_bg"));
+        }
 
         private float defaultXPos;
 

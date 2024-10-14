@@ -18,6 +18,8 @@ namespace PAS.Content.Scenes
 
         public override void Start()
         {
+            Vector2u windowSize = Game.GetInstance().GetWindow().Size/10;
+
             AssetLoader texload = AssetLoader.GetInstance();
 
             AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(-texload.GetTexture("sky_bg").Size.X, 0.0f));

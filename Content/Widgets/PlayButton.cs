@@ -11,7 +11,10 @@ namespace PAS.Content.Widgets
 {
     internal class PlayButton : Engine.Button
     {
-        public PlayButton() : base() { }
+        public PlayButton() : base() 
+        {
+            sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("menu_button"));
+        }
 
         public override void Start()
         {

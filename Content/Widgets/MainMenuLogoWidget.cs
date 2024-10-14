@@ -13,7 +13,10 @@ namespace PAS.Content.Widgets
     {
         Vector2f defaultLocation;
 
-        public MainMenuLogoWidget() : base() { }
+        public MainMenuLogoWidget() : base() 
+        { 
+            sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("logo")); 
+        }
 
         public override void Start()
         {
