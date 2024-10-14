@@ -29,7 +29,7 @@ namespace PAS.Engine
 
         public Vector2f getRelativeMousePos()
         {
-            Vector2i mousePos = Mouse.GetPosition(parentScene.GetGameInstance().GetWindow());
+            Vector2i mousePos = Mouse.GetPosition(parentScene.GetGameInstance().GetWindow())/10;
             return new Vector2f(
                 (mousePos.X - actorLocation.X)/actorScale.X,
                 (mousePos.Y - actorLocation.Y) / actorScale.Y
