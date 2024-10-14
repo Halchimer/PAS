@@ -9,6 +9,8 @@ namespace PAS.Content.Characters
 {
     internal class Damager : Engine.Character
     {
+        bool reflectDamages = false;
+
         public Damager() : base() 
         {
             BaseHealth = 3;
@@ -17,7 +19,14 @@ namespace PAS.Content.Characters
 
         public override void Ability()
         {
+            reflectDamages = true;
             base.Ability();
+        }
+
+        public override void OnRecieveDamage(int amount, Character instigator)
+        {
+            instigator.Damage(amount, this);
+            reflectDamages = false;
         }
     }
 }

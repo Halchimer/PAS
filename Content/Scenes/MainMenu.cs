@@ -12,7 +12,7 @@ namespace PAS.Content.Scenes
 {
     internal class MainMenu : Scene
     {
-        public MainMenu(Game gameInstance) : base(gameInstance) {
+        public MainMenu() : base() {
             LoadTextures();
         }
 

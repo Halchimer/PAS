@@ -13,7 +13,7 @@ namespace PAS
             Game gameInstance = Game.GetInstance();
             gameInstance.InitWindow(1920, 1080, "PAS", true);
 
-            Scene mainMenu = new Content.Scenes.MainMenu(gameInstance);
+            Scene mainMenu = new Content.Scenes.MainMenu();
 
             gameInstance.SetScene(mainMenu);
             gameInstance.StartGame();

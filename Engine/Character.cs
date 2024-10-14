@@ -3,6 +3,7 @@ using SFML.System;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,10 +51,15 @@ namespace PAS.Engine
             
             health -= amount;
 
+            OnRecieveDamage(amount, instigator);
+
             if(health <= 0)
             {
                 PASEventHandler.GetInstance().TriggerEvent(new CharacterDeathEvent(instigator));
             }
         }
+
+        public virtual void OnRecieveDamage(int amount, Character instigator)
+        { }
     }
 }

@@ -14,8 +14,8 @@ namespace PAS.Engine
 
         List<Actor> sceneActors;
 
-        public Scene(Game gameInstance) {
-            parentGameInstance = gameInstance;
+        public Scene() {
+            parentGameInstance = Game.GetInstance();
 
             sceneActors = new List<Actor>();
         }

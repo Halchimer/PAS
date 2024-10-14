@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 
 namespace PAS.Content.Widgets
 {
+    internal class TestEvent : Engine.Event
+    {
+
+    }
+
     internal class PlayButton : Engine.Button
     {
         public PlayButton() : base() 
@@ -31,7 +36,7 @@ namespace PAS.Content.Widgets
 
         public override void OnClick(RenderWindow window)
         {
-            Game.GetInstance().SetScene(new Scenes.CombatScene(Game.GetInstance()));
+            Game.GetInstance().SetScene(new Scenes.CombatScene());
 
             base.OnClick(window);
         }
