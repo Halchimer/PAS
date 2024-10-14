@@ -37,13 +37,15 @@ namespace PAS.Engine
         public int BaseHealth { get; protected set; }
         public int Power { get; protected set; }
 
+        public int AbilityCooldown { get; protected set; }
+
         int health;
 
         public Character() : base() 
         {
             health = BaseHealth;
         }
-        public virtual void Ability() { }
+        public virtual void Ability() {}
 
         public void Damage(int amount, Character instigator)
         {

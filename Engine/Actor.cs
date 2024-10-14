@@ -23,6 +23,8 @@ namespace PAS.Engine
             sprite.Position = location;
             actorLocation = location;
 
+            actorScale = new Vector2f(1f, 1f);
+
             if(scene != null)
                 parentScene = scene;
         }

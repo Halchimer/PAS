@@ -31,6 +31,8 @@ namespace PAS.Content.Scenes
 
             AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X/2 - texload.GetTexture("menu_button").Size.X/2, (3* windowSize.Y) /4));
 
+            AddActorOfClass<Widgets.Combat.AttackButton>(new Vector2f(0.0f, 0.0f));
+
             base.Start();
         }
 

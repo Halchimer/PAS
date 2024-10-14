@@ -8,7 +8,7 @@ namespace PAS.Content.Scenes
 {
     internal class CombatScene : Engine.Scene
     {
-        public CombatScene(Engine.Game gameInstance) : base(gameInstance) { }
+        public CombatScene() : base() { }
 
         public override void Start()
         {

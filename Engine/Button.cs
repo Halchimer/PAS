@@ -31,8 +31,8 @@ namespace PAS.Engine
         {
             Vector2i mousePos = Mouse.GetPosition(parentScene.GetGameInstance().GetWindow())/10;
             return new Vector2f(
-                (mousePos.X - actorLocation.X)/actorScale.X,
-                (mousePos.Y - actorLocation.Y) / actorScale.Y
+                mousePos.X/actorScale.X - actorLocation.X,
+                mousePos.Y / actorScale.Y - actorLocation.Y
             );
         }
         public void OnClickCheckCall(RenderWindow window)
