@@ -1,4 +1,5 @@
-﻿using PAS.Engine;
+﻿using PAS.Content.Scenes;
+using PAS.Engine;
 using SFML.Graphics;
 using SFML.System;
 using System;
@@ -20,6 +21,7 @@ namespace PAS.Content.Widgets
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
             AddText("PLAY", AssetLoader.GetInstance().GetFont("main"), 9, new SFML.System.Vector2f(18.0f, 0f));
+            _text.Color = new Color(50, 50, 50);
         }
 
         public override void Tick()
@@ -29,7 +31,7 @@ namespace PAS.Content.Widgets
 
         public override void OnClick(RenderWindow window)
         {
-            Game.GetInstance().SetScene(new Scenes.CombatScene());
+            Game.GetInstance().SetScene(new Scenes.ClassSelectionScene());
 
             base.OnClick(window);
         }

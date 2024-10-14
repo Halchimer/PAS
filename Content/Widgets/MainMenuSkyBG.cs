@@ -17,7 +17,7 @@ namespace PAS.Content.Widgets
 
         private float defaultXPos;
 
-        const float SPEED = 100;
+        const float SPEED = 2;
 
         public override void Start()
         {
@@ -31,7 +31,7 @@ namespace PAS.Content.Widgets
             float deltaTime = Game.GetInstance().DeltaTime;
 
             if (actorLocation.X < defaultXPos + sprite.Texture.Size.X)
-                SetLocation(actorLocation + new SFML.System.Vector2f(1.0f, 0.0f) * SPEED * deltaTime);
+                SetLocation(actorLocation + new SFML.System.Vector2f(1.0f, 0.0f) * SPEED * deltaTime, false);
             else
                 SetLocation(new Vector2f(defaultXPos, actorLocation.Y));
 

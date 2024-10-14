@@ -24,7 +24,8 @@ namespace PAS.Content.Widgets
                 192 / 2 - sprite.GetLocalBounds().Width / 2,
                 108.0f / 15
             );
-            SetLocation(defaultLocation);
+
+            MoveToLocationOverTime(defaultLocation, 5);
 
             base.Start();
         }

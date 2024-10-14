@@ -13,6 +13,8 @@ namespace PAS.Content.Scenes
 {
     internal class MainMenu : Scene
     {
+
+        public Actor logo;
         public MainMenu() : base() {
             LoadTextures();
         }
@@ -28,7 +30,10 @@ namespace PAS.Content.Scenes
 
             AddActorOfClass<MainMenuBackground>(new SFML.System.Vector2f(0.0f, 0.0f));
 
-            AddActorOfClass<MainMenuLogoWidget>(new SFML.System.Vector2f(0.0f, 0.0f));
+            logo =  AddActorOfClass<MainMenuLogoWidget>(new SFML.System.Vector2f(
+                192 / 2 - texload.GetTexture("logo").Size.X / 2,
+                -texload.GetTexture("logo").Size.Y
+            ));
 
             AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X/2 - texload.GetTexture("button").Size.X/2,70f));
             AddActorOfClass<QuitButton>(new SFML.System.Vector2f(windowSize.X / 2 - texload.GetTexture("button").Size.X / 2, 87f));

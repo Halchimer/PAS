@@ -34,9 +34,10 @@ namespace PAS.Engine
 
     internal class Character : Actor
     {
+
+        public string Name { get; protected set; }
         public int BaseHealth { get; protected set; }
         public int Power { get; protected set; }
-
         public int AbilityCooldown { get; protected set; }
 
         int health;

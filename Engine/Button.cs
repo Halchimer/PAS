@@ -13,11 +13,13 @@ namespace PAS.Engine
 {
     internal class Button : Actor
     {
+
         protected Text _text;
         private Vector2f _text_offset = new Vector2f(0.0f,0.0f);
 
         private bool hasClicked = false;
-        public Button() : base() {}
+        public Button() : base() {
+        }
 
         public void AddText(string text, Font font,uint character_size , Vector2f textOffset)
         {
@@ -37,11 +39,12 @@ namespace PAS.Engine
         }
         public void OnClickCheckCall(RenderWindow window)
         {
-            if (Mouse.IsButtonPressed(Mouse.Button.Left))
+            if (sprite.TextureRect.Contains(getRelativeMousePos()))
             {
-                if (sprite.TextureRect.Contains(getRelativeMousePos()))
+                _text.Color = Color.White;
+                if (Mouse.IsButtonPressed(Mouse.Button.Left))
                 {
-                    if(!hasClicked)
+                    if (!hasClicked)
                         OnClick(window);
 
                     hasClicked = true;
@@ -49,7 +52,10 @@ namespace PAS.Engine
 
             }
             else
+            {
+                _text.Color = new Color(5,5,5);
                 hasClicked = false;
+            }
         }
 
         public override void Tick()
@@ -68,7 +74,7 @@ namespace PAS.Engine
                 parentScene.GetGameInstance().GetWindow().Draw(_text);
         }
 
-        public override void SetLocation(Vector2f location)
+        public override void SetLocation(Vector2f location, bool snapSprite = true)
         {   
             if(_text != null)
                 _text.Position = location + _text_offset;

@@ -14,6 +14,7 @@ namespace PAS.Content.Widgets
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
             AddText("QUIT", AssetLoader.GetInstance().GetFont("main"), 9, new SFML.System.Vector2f(18f, 0f));
+            _text.Color = new Color(50, 50, 50);
         }
         public override void OnClick(RenderWindow window)
         {
