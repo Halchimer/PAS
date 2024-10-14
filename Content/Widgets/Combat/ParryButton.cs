@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace PAS.Content.Widgets.Combat
 {
-    internal class PlayerAttackEvent : Engine.Event
+    internal class PlayerParryEvent : Engine.Event
     {
-        public PlayerAttackEvent() : base() { }
+        public PlayerParryEvent() : base() { }
     }
-    internal class AttackButton : Engine.Button
+    internal class ParryButton : Engine.Button
     {
-        public AttackButton() : base()
+        public ParryButton() : base()
         { 
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
 
@@ -23,7 +23,7 @@ namespace PAS.Content.Widgets.Combat
 
         public override void OnClick(RenderWindow window)
         {
-            PASEventHandler.GetInstance().TriggerEvent(new PlayerAttackEvent());
+            PASEventHandler.GetInstance().TriggerEvent(new PlayerParryEvent());
 
             base.OnClick(window);
         }

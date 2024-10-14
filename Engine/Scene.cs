@@ -12,7 +12,7 @@ namespace PAS.Engine
     {
         private Game parentGameInstance;
 
-        List<Actor> sceneActors;
+        protected List<Actor> sceneActors;
 
         public Scene() {
             parentGameInstance = Game.GetInstance();

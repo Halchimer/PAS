@@ -11,7 +11,7 @@ namespace PAS
         static void Main(string[] args)
         {
             AssetLoader.GetInstance().LoadTexture("button.png", "button");
-            AssetLoader.GetInstance().LoadFont("upheavtt.ttf", "upheavtt");
+            AssetLoader.GetInstance().LoadFont("upheavtt.ttf", "main");
 
             Game gameInstance = Game.GetInstance();
             gameInstance.InitWindow(1920, 1080, "PAS", true);

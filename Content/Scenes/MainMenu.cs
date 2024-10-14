@@ -1,4 +1,5 @@
 ﻿using PAS.Content.Widgets;
+using PAS.Content.Widgets.Combat;
 using PAS.Engine;
 using SFML.Graphics;
 using SFML.System;
@@ -29,11 +30,18 @@ namespace PAS.Content.Scenes
 
             AddActorOfClass<MainMenuLogoWidget>(new SFML.System.Vector2f(0.0f, 0.0f));
 
-            AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X/2 - texload.GetTexture("menu_button").Size.X/2, (3* windowSize.Y) /4));
-
-            AddActorOfClass<Widgets.Combat.AttackButton>(new Vector2f(0.0f, 0.0f));
+            AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X/2 - texload.GetTexture("button").Size.X/2,70f));
+            AddActorOfClass<QuitButton>(new SFML.System.Vector2f(windowSize.X / 2 - texload.GetTexture("button").Size.X / 2, 87f));
 
             base.Start();
+        }
+
+        public override void Tick(float deltaTime)
+        {
+            if(PASEventHandler.GetInstance().TryCatchEventOfType<PlayerAttackEvent>() != null)
+                sceneActors.Clear();
+
+            base.Tick(deltaTime);
         }
 
         public AssetLoader LoadTextures()

@@ -15,16 +15,19 @@ namespace PAS.Engine
     {
         List<Event> events;
 
-        private PASEventHandler() { }
+        private PASEventHandler() 
+        {
+            events = new List<Engine.Event>();
+        }
 
         static PASEventHandler _instance;
         public static PASEventHandler GetInstance() { 
             if(_instance==null)
                 _instance = new PASEventHandler();
-            return _instance; 
+            return _instance;
         }
 
-        public void TriggerEvent(Event ev)
+        public void TriggerEvent(Engine.Event ev)
         {
             events.Add(ev);
         }
@@ -32,7 +35,7 @@ namespace PAS.Engine
         {
             return events.ToArray();
         }
-        public T TryCatchEventOfType<T>() where T : Event 
+        public T TryCatchEventOfType<T>() where T : Engine.Event 
         {
             foreach(Event ev in events)
             {

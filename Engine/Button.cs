@@ -55,6 +55,7 @@ namespace PAS.Engine
         public override void Tick()
         {
             OnClickCheckCall(parentScene.GetGameInstance().GetWindow());
+                
             base.Tick();
         }
 

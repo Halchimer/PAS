@@ -20,8 +20,7 @@ namespace PAS.Engine
         public Actor() { }
 
         public virtual void Init(Vector2f location, Scene scene = null) {
-            sprite.Position = location;
-            actorLocation = location;
+            SetLocation(location);
 
             actorScale = new Vector2f(1f, 1f);
 
