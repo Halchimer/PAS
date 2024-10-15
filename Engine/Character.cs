@@ -13,7 +13,8 @@ namespace PAS.Engine
     {
         public Character Subject { get; private set; }
 
-        public CharacterDeathEvent(Character character) : base() {
+        public CharacterDeathEvent(Character character) : base()
+        {
             Subject = character;
         }
     }
@@ -34,36 +35,42 @@ namespace PAS.Engine
 
     internal class Character : Actor
     {
+
+        public string Name { get; protected set; }
         public int BaseHealth { get; protected set; }
         public int Power { get; protected set; }
         public int AbilityCooldown { get; protected set; }
 
+        protected int health;
+        protected int cooldown;
 
-        int health;
-
-        public Character() : base() 
+        public Character() : base()
         {
             health = BaseHealth;
         }
-        public virtual void Ability() { }
+        public virtual void Ability(Character target = null) { }
+
+        public virtual void Attack(Character target)
+        {
+            if (target != null)
+                target.Damage(Power, this);
+        }
 
         public void Damage(int amount, Character instigator)
         {
             PASEventHandler.GetInstance().TriggerEvent(new CharacterDamageEvent(instigator, this, amount));
-            
+
             health -= amount;
 
             OnRecieveDamage(amount, instigator);
 
-            if(health <= 0)
+            if (health <= 0)
             {
                 PASEventHandler.GetInstance().TriggerEvent(new CharacterDeathEvent(instigator));
             }
         }
 
         public virtual void OnRecieveDamage(int amount, Character instigator)
-        {
-            
-        }
+        { }
     }
 }

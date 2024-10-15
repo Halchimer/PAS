@@ -9,19 +9,19 @@ namespace PAS.Content.Characters
 {
     internal class WukongBebere : Engine.Character
     {
-        bool  revive = false;
+        bool revive = false;
 
         public WukongBebere() : base()
         {
-            BaseHealth = 3;
-            Power = 2;
-            Cooldown = 4;
+            BaseHealth = 3000;
+            Power = 2000;
+            AbilityCooldown = 4;
 
         }
 
-        public override void Ability()
+        public override void Ability(Character target = null)
         {
-            if (Cooldown >= BaseCooldown) 
+            if (cooldown >= AbilityCooldown)
                 revive = true;
         }
 
@@ -29,9 +29,9 @@ namespace PAS.Content.Characters
         {
             if (health <= 0 && revive == true)
             {
-                health = 1;
+                health = 1000;
                 Power++;
-                revive = true;
+                revive = false;
             }
         }
     }

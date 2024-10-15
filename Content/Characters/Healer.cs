@@ -11,26 +11,21 @@ namespace PAS.Content.Characters
     {
         public Healer() : base()
         {
-            BaseHealth = 4;
-            Power = 1;
-            BaseCooldown = 2;
+            BaseHealth = 4000;
+            Power = 1000;
+            AbilityCooldown = 2;
         }
 
-        public override void Ability()
+        public override void Ability(Character target = null)
         {
-            if (Cooldown >= BaseCooldown)
+            if (cooldown >= AbilityCooldown)
             {
-            health += 2;
-            if (health > BaseHealth)
-                health = BaseHealth;
-                Cooldown = 0;
+                health += 2000;
+                if (health > BaseHealth)
+                    health = BaseHealth;
             }
-            
+
         }
 
-        public override void OnRecieveDamage(int amount, Character instigator)
-        {
-            instigator.Damage(amount, this);
-        }
     }
 }

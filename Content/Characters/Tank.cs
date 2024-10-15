@@ -9,28 +9,28 @@ namespace PAS.Content.Characters
 {
     internal class Tank : Engine.Character
     {
+
+
         public Tank() : base()
         {
-            BaseHealth = 5;
-            Power = 1;
-            Cooldown = 2;
+            BaseHealth = 5000;
+            Power = 1000;
+            AbilityCooldown = 2;
 
         }
 
-        public override void Ability()
+        public override void Ability(Character target = null)
         {
-        if (Cooldown >= BaseCooldown)
+            if (cooldown >= AbilityCooldown)
             {
-                health--;
-                Power++;
-                // attacker
-                Power--;
-
+                Damage(1000, this);
+                Power += 1000;
+                Attack(target);
+                Power -= 1000;
             }
         }
 
-        public override void OnRecieveDamage(int amount, Character instigator)
-        {
-        }
+
+
     }
 }

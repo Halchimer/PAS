@@ -3,80 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Healer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\Healer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\WukongBebere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\WukongBebere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Necromancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\Necromancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Damager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\Damager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\WukongBebere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\WukongBebere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\Tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Widgets\\MainMenuBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Healer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Characters\\Healer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\Scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuLogoWidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Widgets\\MainMenuLogoWidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\AssetLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\AssetLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Scenes\\CombatScene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Scenes\\CombatScene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\PlayButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Widgets\\PlayButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\PASEventHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\PASEventHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Healer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Healer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\Game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Scenes\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Scenes\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuSkyBG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Content\\Widgets\\MainMenuSkyBG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\Actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Engine\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,116 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CombatScene.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Scenes\\CombatScene.cs",
-              "RelativeDocumentMoniker": "Content\\Scenes\\CombatScene.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Scenes\\CombatScene.cs",
-              "RelativeToolTip": "Content\\Scenes\\CombatScene.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBMAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainMenuBackground.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuBackground.cs",
-              "RelativeDocumentMoniker": "Content\\Widgets\\MainMenuBackground.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuBackground.cs",
-              "RelativeToolTip": "Content\\Widgets\\MainMenuBackground.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Game.cs",
-              "RelativeDocumentMoniker": "Engine\\Game.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Game.cs",
-              "RelativeToolTip": "Engine\\Game.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAjwEwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Scene.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Scene.cs",
-              "RelativeDocumentMoniker": "Engine\\Scene.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Scene.cs",
-              "RelativeToolTip": "Engine\\Scene.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAD4vyIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AssetLoader.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\AssetLoader.cs",
-              "RelativeDocumentMoniker": "Engine\\AssetLoader.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\AssetLoader.cs",
-              "RelativeToolTip": "Engine\\AssetLoader.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAWwCsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.054Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Necromancer.cs",
+              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Necromancer.cs",
+              "RelativeDocumentMoniker": "Content\\Characters\\Necromancer.cs",
+              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Necromancer.cs",
+              "RelativeToolTip": "Content\\Characters\\Necromancer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:38:53.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Character.cs",
               "RelativeDocumentMoniker": "Engine\\Character.cs",
               "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Character.cs",
               "RelativeToolTip": "Engine\\Character.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T07:34:34.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainMenuLogoWidget.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuLogoWidget.cs",
-              "RelativeDocumentMoniker": "Content\\Widgets\\MainMenuLogoWidget.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuLogoWidget.cs",
-              "RelativeToolTip": "Content\\Widgets\\MainMenuLogoWidget.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Healer.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Healer.cs",
-              "RelativeDocumentMoniker": "Content\\Characters\\Healer.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Healer.cs",
-              "RelativeToolTip": "Content\\Characters\\Healer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T11:15:57.266Z",
               "EditorCaption": ""
             },
             {
@@ -206,25 +74,14 @@
               "RelativeDocumentMoniker": "Content\\Characters\\WukongBebere.cs",
               "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\WukongBebere.cs",
               "RelativeToolTip": "Content\\Characters\\WukongBebere.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T11:16:03.664Z"
+              "WhenOpened": "2024-10-14T11:16:03.664Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Damager.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Damager.cs",
-              "RelativeDocumentMoniker": "Content\\Characters\\Damager.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Damager.cs",
-              "RelativeToolTip": "Content\\Characters\\Damager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Tank.cs",
               "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Tank.cs",
               "RelativeDocumentMoniker": "Content\\Characters\\Tank.cs",
@@ -232,91 +89,34 @@
               "RelativeToolTip": "Content\\Characters\\Tank.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T11:16:02.837Z"
+              "WhenOpened": "2024-10-14T11:16:02.837Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayButton.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\PlayButton.cs",
-              "RelativeDocumentMoniker": "Content\\Widgets\\PlayButton.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\PlayButton.cs",
-              "RelativeToolTip": "Content\\Widgets\\PlayButton.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Button.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Button.cs",
-              "RelativeDocumentMoniker": "Engine\\Button.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Button.cs",
-              "RelativeToolTip": "Engine\\Button.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAASwBkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PASEventHandler.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\PASEventHandler.cs",
-              "RelativeDocumentMoniker": "Engine\\PASEventHandler.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\PASEventHandler.cs",
-              "RelativeToolTip": "Engine\\PASEventHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Scenes\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Content\\Scenes\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Scenes\\MainMenu.cs",
-              "RelativeToolTip": "Content\\Scenes\\MainMenu.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwBwAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Healer.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Healer.cs",
-              "RelativeDocumentMoniker": "Content\\Healer.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Healer.cs",
-              "RelativeToolTip": "Content\\Healer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Healer.cs",
+              "RelativeDocumentMoniker": "Content\\Characters\\Healer.cs",
+              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Healer.cs",
+              "RelativeToolTip": "Content\\Characters\\Healer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.062Z"
+              "WhenOpened": "2024-10-14T11:15:57.266Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MainMenuSkyBG.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuSkyBG.cs",
-              "RelativeDocumentMoniker": "Content\\Widgets\\MainMenuSkyBG.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Widgets\\MainMenuSkyBG.cs",
-              "RelativeToolTip": "Content\\Widgets\\MainMenuSkyBG.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Damager.cs",
+              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Damager.cs",
+              "RelativeDocumentMoniker": "Content\\Characters\\Damager.cs",
+              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Content\\Characters\\Damager.cs",
+              "RelativeToolTip": "Content\\Characters\\Damager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Actor.cs",
-              "DocumentMoniker": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Actor.cs",
-              "RelativeDocumentMoniker": "Engine\\Actor.cs",
-              "ToolTip": "C:\\Users\\gross\\OneDrive\\Bureau\\luka\\taf\\project\\PAS\\Engine\\Actor.cs",
-              "RelativeToolTip": "Engine\\Actor.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA1wCMAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T07:34:34.066Z"
+              "WhenOpened": "2024-10-14T07:34:34.015Z",
+              "EditorCaption": ""
             }
           ]
         }

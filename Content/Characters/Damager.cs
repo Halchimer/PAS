@@ -11,28 +11,30 @@ namespace PAS.Content.Characters
     {
         bool reflectDamages = false;
 
-        public Damager() : base() 
+        public Damager() : base()
         {
-            BaseHealth = 3;
-            Power = 2;
-            Cooldown = 3;
+            BaseHealth = 3000;
+            Power = 2000;
+            AbilityCooldown = 3;
 
         }
 
-        public override void Ability()
+        public override void Ability(Character target = null)
         {
-            if (Cooldown >= BaseCooldown)
+            if (cooldown >= AbilityCooldown)
             {
                 reflectDamages = true;
-                base.Ability();
             }
-                
+
         }
 
         public override void OnRecieveDamage(int amount, Character instigator)
         {
-            instigator.Damage(amount, this);
-            reflectDamages = false;
+            if (reflectDamages)
+            {
+                instigator.Damage(amount, this);
+                reflectDamages = false;
+            }
         }
     }
 }
