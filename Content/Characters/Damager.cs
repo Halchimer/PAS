@@ -15,18 +15,27 @@ namespace PAS.Content.Characters
         {
             BaseHealth = 3;
             Power = 2;
+            AbilityCooldown = 3;
+
         }
 
         public override void Ability()
         {
-            reflectDamages = true;
-            base.Ability();
+            if (cooldown >= AbilityCooldown)
+            {
+                reflectDamages = true;
+                base.Ability();
+            }
+                
         }
 
         public override void OnRecieveDamage(int amount, Character instigator)
         {
-            instigator.Damage(amount, this);
-            reflectDamages = false;
+            if (reflectDamages)
+            {
+                instigator.Damage(amount, this);
+                reflectDamages = false;
+            }
         }
     }
 }
