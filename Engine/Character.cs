@@ -36,6 +36,8 @@ namespace PAS.Engine
     {
         public int BaseHealth { get; protected set; }
         public int Power { get; protected set; }
+        public int AbilityCooldown { get; protected set; }
+
 
         int health;
 
@@ -60,6 +62,8 @@ namespace PAS.Engine
         }
 
         public virtual void OnRecieveDamage(int amount, Character instigator)
-        { }
+        {
+            
+        }
     }
 }

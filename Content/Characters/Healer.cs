@@ -1,4 +1,4 @@
-﻿using PAS.Engine;
+using PAS.Engine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,32 +7,30 @@ using System.Threading.Tasks;
 
 namespace PAS.Content.Characters
 {
-    internal class Damager : Engine.Character
+    internal class Healer : Engine.Character
     {
-        bool reflectDamages = false;
-
-        public Damager() : base() 
+        public Healer() : base()
         {
-            BaseHealth = 3;
-            Power = 2;
-            Cooldown = 3;
-
+            BaseHealth = 4;
+            Power = 1;
+            BaseCooldown = 2;
         }
 
         public override void Ability()
         {
             if (Cooldown >= BaseCooldown)
             {
-                reflectDamages = true;
-                base.Ability();
+            health += 2;
+            if (health > BaseHealth)
+                health = BaseHealth;
+                Cooldown = 0;
             }
-                
+            
         }
 
         public override void OnRecieveDamage(int amount, Character instigator)
         {
             instigator.Damage(amount, this);
-            reflectDamages = false;
         }
     }
 }
