@@ -13,6 +13,8 @@ namespace PAS.Content.Characters
 
         public WukongBebere() : base()
         {
+            Name = "BEBER";
+
             BaseHealth = 3;
             Power = 2;
             AbilityCooldown = 4;

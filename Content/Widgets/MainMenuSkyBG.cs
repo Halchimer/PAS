@@ -13,6 +13,7 @@ namespace PAS.Content.Widgets
         public MainMenuSkyBG(): base() 
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("sky_bg"));
+            sprite.Texture.Repeated = true;
         }
 
         private float defaultXPos;
@@ -30,10 +31,7 @@ namespace PAS.Content.Widgets
         {
             float deltaTime = Game.GetInstance().DeltaTime;
 
-            if (actorLocation.X < defaultXPos + sprite.Texture.Size.X)
-                SetLocation(actorLocation + new SFML.System.Vector2f(1.0f, 0.0f) * SPEED * deltaTime, false);
-            else
-                SetLocation(new Vector2f(defaultXPos, actorLocation.Y));
+            sprite.TextureRect = new SFML.Graphics.IntRect((int)Math.Floor(sprite.TextureRect.Left - 15 * deltaTime), 0, 192, 108);
 
             base.Tick();
         }

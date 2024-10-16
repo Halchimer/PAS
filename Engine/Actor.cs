@@ -94,8 +94,8 @@ namespace PAS.Engine
         }
         public virtual void Draw()
         {
-            if (parentScene != null && sprite != null)
-                parentScene.GetGameInstance().GetWindow().Draw(sprite);
+            if (sprite != null)
+                Game.GetInstance().GetWindow().Draw(sprite);
         }
     }
 }

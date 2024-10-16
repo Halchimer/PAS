@@ -14,6 +14,8 @@ namespace PAS.Content.Characters
 
         public Tank() : base()
         {
+            Name = "TANK";
+
             BaseHealth = 5;
             Power = 1;
             AbilityCooldown = 2;

@@ -17,7 +17,8 @@ namespace PAS.Engine
         protected Text _text;
         private Vector2f _text_offset = new Vector2f(0.0f,0.0f);
 
-        private bool hasClicked = false;
+        private bool _hasClicked = false;
+        private bool _hasHovered = false;
         public Button() : base() {
         }
 
@@ -41,37 +42,48 @@ namespace PAS.Engine
         {
             if (sprite.TextureRect.Contains(getRelativeMousePos()))
             {
-                _text.Color = Color.White;
-                if (Mouse.IsButtonPressed(Mouse.Button.Left))
+                if(!_hasHovered)
                 {
-                    if (!hasClicked)
-                        OnClick(window);
-
-                    hasClicked = true;
+                    Hover();
+                    _hasHovered = true;
                 }
 
+                if (Mouse.IsButtonPressed(Mouse.Button.Left))
+                {
+                    if (!_hasClicked)
+                        OnClick(window);
+
+                    _hasClicked = true;
+                }
+                else
+                    _hasClicked = false;
             }
             else
             {
-                _text.Color = new Color(5,5,5);
-                hasClicked = false;
+                if(_hasHovered)
+                {
+                    Unhover();
+                    _hasHovered = false;
+                }
             }
         }
 
         public override void Tick()
         {
-            OnClickCheckCall(parentScene.GetGameInstance().GetWindow());
+            OnClickCheckCall(Game.GetInstance().GetWindow());
                 
             base.Tick();
         }
 
         public virtual void OnClick(RenderWindow window) { }
 
+        public virtual void Hover() { }
+        public virtual void Unhover() { }
         public override void Draw()
         {
             base.Draw();
             if(_text != null)
-                parentScene.GetGameInstance().GetWindow().Draw(_text);
+                Game.GetInstance().GetWindow().Draw(_text);
         }
 
         public override void SetLocation(Vector2f location, bool snapSprite = true)

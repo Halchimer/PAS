@@ -25,7 +25,6 @@ namespace PAS.Content.Scenes
 
             AssetLoader texload = AssetLoader.GetInstance();
 
-            AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(-texload.GetTexture("sky_bg").Size.X, 0.0f));
             AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(0.0f, 0.0f));
 
             AddActorOfClass<MainMenuBackground>(new SFML.System.Vector2f(0.0f, 0.0f));

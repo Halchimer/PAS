@@ -13,6 +13,8 @@ namespace PAS.Content.Characters
 
         public Damager() : base() 
         {
+            Name = "DAMAGER";
+
             BaseHealth = 3;
             Power = 2;
             AbilityCooldown = 3;

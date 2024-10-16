@@ -20,12 +20,12 @@ namespace PAS.Engine
             sceneActors = new List<Actor>();
         }
 
-        public Actor AddActorOfClass<T>(Vector2f location) where T : Actor, new() 
+        public T AddActorOfClass<T>(Vector2f location) where T : Actor, new() 
         {
             sceneActors.Add(new T());
             sceneActors.Last().Init(location, this);
 
-            return sceneActors.Last();
+            return (T)sceneActors.Last();
         }
 
         public virtual void Start() {}

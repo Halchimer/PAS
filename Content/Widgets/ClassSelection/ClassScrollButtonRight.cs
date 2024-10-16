@@ -15,6 +15,7 @@ namespace PAS.Content.Widgets.ClassSelection
         public ClassScrollButtonRight() : base()
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("selector_button"));
+            sprite.TextureRect = new IntRect(0, 0, 16, 16);
         }
 
         public override void OnClick(RenderWindow window)
@@ -22,5 +23,7 @@ namespace PAS.Content.Widgets.ClassSelection
             PASEventHandler.GetInstance().TriggerEvent(new ClassScrollRightEvent());
             base.OnClick(window);
         }
+
+       
     }
 }

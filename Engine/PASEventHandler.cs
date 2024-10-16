@@ -13,11 +13,11 @@ namespace PAS.Engine
 
     internal class PASEventHandler
     {
-        List<Event> events;
+        Stack<Event> events;
 
         private PASEventHandler() 
         {
-            events = new List<Engine.Event>();
+            events = new Stack<Engine.Event>();
         }
 
         static PASEventHandler _instance;
@@ -29,11 +29,11 @@ namespace PAS.Engine
 
         public void TriggerEvent(Engine.Event ev)
         {
-            events.Add(ev);
+            events.Push(ev);
         }
-        public Event[] PollEvents()
+        public Stack<Event> PollEvents()
         {
-            return events.ToArray();
+            return events;
         }
         public T TryCatchEventOfType<T>() where T : Engine.Event 
         {

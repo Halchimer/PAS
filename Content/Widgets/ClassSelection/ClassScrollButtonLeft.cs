@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SFML.System;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
@@ -15,13 +16,20 @@ namespace PAS.Content.Widgets.ClassSelection
         public ClassScrollButtonLeft() : base() 
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("selector_button"));
-            sprite.Scale = new SFML.System.Vector2f(-1, 1);
+            sprite.Origin = new Vector2f(0, -16);
+            sprite.TextureRect = new IntRect(0, 16, 16, 16);
+            
         }
 
         public override void OnClick(RenderWindow window)
         {
             PASEventHandler.GetInstance().TriggerEvent(new ClassScrollLeftEvent());
             base.OnClick(window);
+        }
+
+        public override void SetLocation(Vector2f location, bool snapSprite = true)
+        {
+            base.SetLocation(location + new Vector2f(0, -16f), snapSprite);
         }
     }
 }
