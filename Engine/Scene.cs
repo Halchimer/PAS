@@ -11,13 +11,16 @@ namespace PAS.Engine
     internal class Scene
     {
         private Game parentGameInstance;
+        public Scene previousScene;
 
         protected List<Actor> sceneActors;
 
-        public Scene() {
+        public Scene(Scene prevScene = null) {
             parentGameInstance = Game.GetInstance();
 
             sceneActors = new List<Actor>();
+
+            previousScene = prevScene;
         }
 
         public T AddActorOfClass<T>(Vector2f location) where T : Actor, new() 

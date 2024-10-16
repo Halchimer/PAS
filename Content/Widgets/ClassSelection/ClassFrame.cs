@@ -6,12 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SFML.System;
+using PAS.Content.Scenes;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
     internal abstract class ClassFrame : Engine.Actor
     {
         public Vector2f defaultCharacterPosition;
+
+        public virtual void ConfirmCharacter() { }
     }
     internal class ClassFrame<T> : ClassFrame where T : Character, new() 
     {
@@ -43,6 +46,11 @@ namespace PAS.Content.Widgets.ClassSelection
                 Game.GetInstance().GetWindow().Draw(characterNameText);
         }
 
+        public override void ConfirmCharacter()
+        {
+            Game.GetInstance().SetScene(new CombatScene<T>(parentScene));
+        }
+
         public override void SetLocation(Vector2f location, bool snapSprite = true)
         {
             Vector2f flooredLocation = new Vector2f((float)Math.Floor(location.X), (float)Math.Floor(location.Y));
@@ -58,5 +66,6 @@ namespace PAS.Content.Widgets.ClassSelection
                 characterNameText.Position = (snapSprite ? flooredLocation : location) + new Vector2f(4,53);
 
         }
+
     }
 }
