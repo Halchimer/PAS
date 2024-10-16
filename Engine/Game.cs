@@ -39,7 +39,7 @@ namespace PAS.Engine
         public ref RenderWindow GetWindow() { return ref window; } // Returns the SFML window
         public ref Scene GetScene() { return ref currentScene; } // Returns the currently running scene.
 
-        public float GetTime()
+        public float GetTime() // Get ellapsed time since scene started
         {
             return clock.ElapsedTime.AsSeconds();
         }
@@ -55,7 +55,7 @@ namespace PAS.Engine
             currentScene.RunActorStart();
         }
 
-        public void InitWindow(uint width, uint height, string name, bool fullscreen)
+        public void InitWindow(uint width, uint height, string name, bool fullscreen) // Initializes SFML window
         {
             window = new RenderWindow(
                 new SFML.Window.VideoMode(width, height),
@@ -73,7 +73,7 @@ namespace PAS.Engine
 
             window.Closed += new EventHandler(OnClose);
         }
-        public void StartGame()
+        public void StartGame() // Executes scene actors startup function and initialize main loop
         {
             MainLoop();
         }

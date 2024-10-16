@@ -34,16 +34,26 @@ namespace PAS.Engine
 
     internal class Character : Actor
     {
+
+        public string Name { get; protected set; }
         public int BaseHealth { get; protected set; }
         public int Power { get; protected set; }
+        public int AbilityCooldown { get; protected set; }
 
-        int health;
+        protected int health;
+        protected int cooldown;
 
         public Character() : base() 
         {
             health = BaseHealth;
         }
-        public virtual void Ability() { }
+        public virtual void Ability() {}
+
+        public virtual void Attack(Character target)
+        {
+            if (target != null)
+                target.Damage(Power, this);
+        }
 
         public void Damage(int amount, Character instigator)
         {

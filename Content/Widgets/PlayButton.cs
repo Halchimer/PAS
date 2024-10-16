@@ -1,4 +1,5 @@
-﻿using PAS.Engine;
+﻿using PAS.Content.Scenes;
+using PAS.Engine;
 using SFML.Graphics;
 using SFML.System;
 using System;
@@ -18,15 +19,9 @@ namespace PAS.Content.Widgets
     {
         public PlayButton() : base() 
         {
-            sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("menu_button"));
-        }
-
-        public override void Start()
-        {
-
-            AssetLoader.GetInstance().LoadFont("upheavtt.ttf", "main_font");
-            AddText("PLAY", AssetLoader.GetInstance().GetFont("main_font"), 10 ,new SFML.System.Vector2f(19.0f, -2.0f)) ;
-            base.Start();
+            sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
+            AddText("PLAY", AssetLoader.GetInstance().GetFont("main"), 9, new SFML.System.Vector2f(18.0f, 0f));
+            _text.Color = new Color(50, 50, 50);
         }
 
         public override void Tick()
@@ -36,11 +31,7 @@ namespace PAS.Content.Widgets
 
         public override void OnClick(RenderWindow window)
         {
-<<<<<<< Updated upstream
-            Game.GetInstance().SetScene(new Scenes.CombatScene());
-=======
-            Game.GetInstance().SetScene(new Scenes.ClassSelectionScene(parentScene));
->>>>>>> Stashed changes
+            Game.GetInstance().SetScene(new Scenes.ClassSelectionScene());
 
             base.OnClick(window);
         }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SFML.System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
@@ -59,8 +60,8 @@ namespace PAS.Content.Widgets.ClassSelection
                             );
                         }
                     }
+                    continue;
                 }
-
                 if (e.GetType() == typeof(ClassScrollLeftEvent))
                 {
                     if (_index > 0)
@@ -74,11 +75,12 @@ namespace PAS.Content.Widgets.ClassSelection
                             );
                         }
                     }
+                    continue;
                 }
-
-                if (e.GetType() == typeof(ConfirmClassEvent))
+                if(e.GetType() == typeof(ConfirmCharacterEvent))
                 {
-                    classFrames[_index].StartWithCharacter();
+                    classFrames[_index].ConfirmCharacter();
+                    continue;
                 }
             }
             

@@ -1,4 +1,5 @@
 ﻿using PAS.Content.Widgets;
+using PAS.Content.Widgets.Combat;
 using PAS.Engine;
 using SFML.Graphics;
 using SFML.System;
@@ -12,37 +13,39 @@ namespace PAS.Content.Scenes
 {
     internal class MainMenu : Scene
     {
+
+        public Actor logo;
         public MainMenu() : base() {
             LoadTextures();
-
-            Vector2u windowSize = Game.GetInstance().GetWindow().Size / 10;
-
-            AssetLoader texload = AssetLoader.GetInstance();
-
-            AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(-texload.GetTexture("sky_bg").Size.X, 0.0f));
-            AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(0.0f, 0.0f));
-
-            AddActorOfClass<MainMenuBackground>(new SFML.System.Vector2f(0.0f, 0.0f));
-
-<<<<<<< Updated upstream
-            AddActorOfClass<MainMenuLogoWidget>(new SFML.System.Vector2f(0.0f, 0.0f));
-
-            AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X/2 - texload.GetTexture("menu_button").Size.X/2, (3* windowSize.Y) /4));
-=======
-            logo = AddActorOfClass<MainMenuLogoWidget>(new SFML.System.Vector2f(
-                192 / 2 - texload.GetTexture("logo").Size.X / 2,
-                -texload.GetTexture("logo").Size.Y
-            ));
-
-            AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X / 2 - texload.GetTexture("button").Size.X / 2, 70f));
-            AddActorOfClass<QuitButton>(new SFML.System.Vector2f(windowSize.X / 2 - texload.GetTexture("button").Size.X / 2, 87f));
         }
 
         public override void Start()
         {
->>>>>>> Stashed changes
+            Vector2u windowSize = Game.GetInstance().GetWindow().Size/10;
+
+            AssetLoader texload = AssetLoader.GetInstance();
+
+            AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(0.0f, 0.0f));
+
+            AddActorOfClass<MainMenuBackground>(new SFML.System.Vector2f(0.0f, 0.0f));
+
+            logo =  AddActorOfClass<MainMenuLogoWidget>(new SFML.System.Vector2f(
+                192 / 2 - texload.GetTexture("logo").Size.X / 2,
+                -texload.GetTexture("logo").Size.Y
+            ));
+
+            AddActorOfClass<PlayButton>(new SFML.System.Vector2f(windowSize.X/2 - texload.GetTexture("button").Size.X/2,70f));
+            AddActorOfClass<QuitButton>(new SFML.System.Vector2f(windowSize.X / 2 - texload.GetTexture("button").Size.X / 2, 87f));
 
             base.Start();
+        }
+
+        public override void Tick(float deltaTime)
+        {
+            if(PASEventHandler.GetInstance().TryCatchEventOfType<PlayerAttackEvent>() != null)
+                sceneActors.Clear();
+
+            base.Tick(deltaTime);
         }
 
         public AssetLoader LoadTextures()

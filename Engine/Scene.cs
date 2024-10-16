@@ -10,25 +10,25 @@ namespace PAS.Engine
 {
     internal class Scene
     {
-        private Game _parentGameInstance;
+        private Game parentGameInstance;
         public Scene previousScene;
 
-        List<Actor> sceneActors;
+        protected List<Actor> sceneActors;
 
-        public Scene(Scene previousScene = null)
-        {
-            _parentGameInstance = Game.GetInstance();
+        public Scene(Scene prevScene = null) {
+            parentGameInstance = Game.GetInstance();
 
             sceneActors = new List<Actor>();
-            this.previousScene = previousScene;
+
+            previousScene = prevScene;
         }
 
-        public Actor AddActorOfClass<T>(Vector2f location) where T : Actor, new() 
+        public T AddActorOfClass<T>(Vector2f location) where T : Actor, new() 
         {
             sceneActors.Add(new T());
             sceneActors.Last().Init(location, this);
 
-            return sceneActors.Last();
+            return (T)sceneActors.Last();
         }
 
         public virtual void Start() {}
@@ -43,12 +43,6 @@ namespace PAS.Engine
                 actor.Draw();
             }
         }
-
-        public void DeleteActor(Actor actor)
-        {
-            sceneActors.Remove(actor);
-        }
-        
         public void RunActorTicks() 
         {
             List<Actor> actors = new List<Actor>(sceneActors);
@@ -64,6 +58,6 @@ namespace PAS.Engine
                 actor.Start();
             }
         }
-        public Game GetGameInstance() { return _parentGameInstance; }
+        public Game GetGameInstance() { return parentGameInstance; }
     }
 }

@@ -13,7 +13,7 @@ namespace PAS.Content.Scenes
 {
     internal class ClassSelectionScene : Engine.Scene
     {
-        public ClassSelectionScene(Scene previousScene = null) : base(previousScene) {
+        public ClassSelectionScene(Scene prevScene = null) : base(prevScene) {
 
             var classSelector = AddActorOfClass<ClassSelector>(new Vector2f(0f,0f));
             
@@ -26,8 +26,8 @@ namespace PAS.Content.Scenes
             AddActorOfClass<ClassScrollButtonLeft>(new Vector2f(Game.GetInstance().GetWindow().Size.X/20-38, Game.GetInstance().GetWindow().Size.Y/20 - 8));
             AddActorOfClass<ClassScrollButtonRight>(new Vector2f(Game.GetInstance().GetWindow().Size.X / 20 +22, Game.GetInstance().GetWindow().Size.Y / 20 - 8));
 
-            AddActorOfClass<CancelButton>(new Vector2f(0,0));
-            AddActorOfClass<StartButton>(new Vector2f(Game.GetInstance().GetWindow().Size.X / 20 - 8, 0));
+            AddActorOfClass<BackButton>(new Vector2f(0, 0));
+            AddActorOfClass<StartButton>(new Vector2f(95f, 0));
         }
 
         public override void Start()
