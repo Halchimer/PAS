@@ -32,13 +32,12 @@ namespace PAS.Content.Scenes
 
             AssetLoader texload = AssetLoader.GetInstance();
 
-            AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(-texload.GetTexture("mainmenu_sky_bg").Size.X, 0.0f));
+            AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(texload.GetTexture("mainmenu_sky_bg").Size.X, 0.0f));
             AddActorOfClass<MainMenuSkyBG>(new SFML.System.Vector2f(0.0f, 0f));
 
             AddActorOfClass<MainMenuBackground>(new SFML.System.Vector2f(0.0f, 25f));
 
             Random randChoice = new Random();
-
 
             //coords : min 192, max 108
 
@@ -106,11 +105,6 @@ namespace PAS.Content.Scenes
         {
             // Code here 
          
-            if (Keyboard.IsKeyPressed(Keyboard.Key.R))
-            {
-                Console.WriteLine("R key pressed");
-                playerCharacter.SetLocation(new Vector2f(0f, 0f));
-            }
 
             base.Tick(deltaTime);
 
@@ -122,6 +116,7 @@ namespace PAS.Content.Scenes
             if (PASEventHandler.GetInstance().TryCatchEventOfType<PlayerAttackEvent> != null)
             {
                 //ATTAQUER
+
             }
             /*else if (PASEventHandler.GetInstance().TryCatchEventOfType<PlayerDefenseEvent> != null)
             {
