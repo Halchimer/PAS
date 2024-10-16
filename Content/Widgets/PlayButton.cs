@@ -36,7 +36,11 @@ namespace PAS.Content.Widgets
 
         public override void OnClick(RenderWindow window)
         {
+<<<<<<< Updated upstream
             Game.GetInstance().SetScene(new Scenes.CombatScene());
+=======
+            Game.GetInstance().SetScene(new Scenes.ClassSelectionScene(parentScene));
+>>>>>>> Stashed changes
 
             base.OnClick(window);
         }

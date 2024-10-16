@@ -52,6 +52,7 @@ namespace PAS.Engine
 
             clock.Restart();
             currentScene.Start();
+            currentScene.RunActorStart();
         }
 
         public void InitWindow(uint width, uint height, string name, bool fullscreen)
@@ -74,7 +75,6 @@ namespace PAS.Engine
         }
         public void StartGame()
         {
-            currentScene.RunActorStart();
             MainLoop();
         }
         

@@ -1,0 +1,17 @@
+Index: Content/Widgets/ClassSelection/ClassFrame.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using PAS.Engine;\r\nusing SFML.Graphics;\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing System.Text;\r\nusing System.Threading.Tasks;\r\n\r\nnamespace PAS.Content.Widgets.ClassSelection\r\n{\r\n    internal class ClassFrame<T> : Engine.Actor where T : Character, new()\r\n    {\r\n        Sprite characterSprite;\r\n        Text characterNameText;\r\n        public ClassFrame() : base() \r\n        { \r\n            sprite = new Sprite(AssetLoader.GetInstance().GetTexture(\"class_frame\"));\r\n\r\n            T temp_character = new T();\r\n            characterSprite = temp_character.GetSprite();\r\n            characterNameText = new Text(temp_character.Name, AssetLoader.GetInstance().GetFont(\"main\"));\r\n        }\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/Content/Widgets/ClassSelection/ClassFrame.cs b/Content/Widgets/ClassSelection/ClassFrame.cs
+--- a/Content/Widgets/ClassSelection/ClassFrame.cs	(revision 4d8083f5e9e70a50eef36388195f39e0c9e219a9)
++++ b/Content/Widgets/ClassSelection/ClassFrame.cs	(date 1728997554000)
+@@ -10,6 +10,8 @@
+ {
+     internal class ClassFrame<T> : Engine.Actor where T : Character, new()
+     {
++        public int Index { get; set; }
++        
+         Sprite characterSprite;
+         Text characterNameText;
+         public ClassFrame() : base() 

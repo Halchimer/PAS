@@ -1,0 +1,82 @@
+Index: Content/Healer.cs
+===================================================================
+diff --git a/Content/Healer.cs b/Content/Healer.cs
+deleted file mode 100644
+--- a/Content/Healer.cs	(revision 53c0520295c6432477db3c2de997b57ed46cd6cc)
++++ /dev/null	(revision 53c0520295c6432477db3c2de997b57ed46cd6cc)
+@@ -1,14 +0,0 @@
+-using System;
+-using System.Collections.Generic;
+-using System.Linq;
+-using System.Text;
+-using System.Threading.Tasks;
+-
+-namespace PAS.Content
+-{
+-    internal class Healer : Engine.Character
+-    {
+-        public Healer() : base() { }
+-    }
+-}
+-;
+\ No newline at end of file
+Index: Content/Widgets/ClassSelection/ClassSelector.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Content/Widgets/ClassSelection/ClassSelector.cs b/Content/Widgets/ClassSelection/ClassSelector.cs
+new file mode 100644
+--- /dev/null	(date 1728997936000)
++++ b/Content/Widgets/ClassSelection/ClassSelector.cs	(date 1728997936000)
+@@ -0,0 +1,30 @@
++using PAS.Engine;
++using SFML.Graphics;
++using System;
++using System.Collections.Generic;
++using System.Linq;
++using System.Text;
++using System.Threading.Tasks;
++
++namespace PAS.Content.Widgets.ClassSelection
++{
++    internal class ClassSelector : Engine.Actor
++    {
++        private List<ClassFrame<Character>> classFrames;
++        
++        private int _index;
++        private int _playableClassNumber;
++
++        public ClassSelector() : base() 
++        {}
++
++        private void AddPlayableCharacter<T>() where T : Character, new()
++        {
++            classFrames.Add(
++                parentScene.AddActorOfClass<ClassFrame<T>>(
++                    
++                )
++            );
++        }   
++    }
++}
+\ No newline at end of file
+Index: obj/PAS.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\gabri\\.nuget\\packages\\</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.7.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"C:\\Users\\gabri\\.nuget\\packages\\\" />\r\n  </ItemGroup>\r\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/obj/PAS.csproj.nuget.g.props b/obj/PAS.csproj.nuget.g.props
+--- a/obj/PAS.csproj.nuget.g.props	(revision 53c0520295c6432477db3c2de997b57ed46cd6cc)
++++ b/obj/PAS.csproj.nuget.g.props	(date 1728997936000)
+@@ -7,7 +7,7 @@
+     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\gabri\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
++    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.1</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+     <SourceRoot Include="C:\Users\gabri\.nuget\packages\" />

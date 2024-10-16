@@ -54,5 +54,14 @@ namespace PAS.Engine
             if (parentScene != null)
                 parentScene.GetGameInstance().GetWindow().Draw(sprite);
         }
+
+        public virtual void Destroy()
+        {
+            if (parentScene == null)
+                return;
+            
+            sprite.Dispose();
+            parentScene.DeleteActor(this);
+        }
     }
 }
