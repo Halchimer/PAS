@@ -11,7 +11,7 @@
         "projectName": "PAS",
         "projectPath": "C:\\Users\\yvann\\source\\repos\\PAS\\PAS.csproj",
         "packagesPath": "C:\\Users\\yvann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yvann\\Source\\Repos\\PAS\\obj\\",
+        "outputPath": "C:\\Users\\yvann\\source\\repos\\PAS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

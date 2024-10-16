@@ -196,3 +196,12 @@ D:\gabri\Projets\PAS\bin\Debug\net6.0\runtimes\win-x86\native\csfml-window.dll
 D:\gabri\Projets\PAS\bin\Debug\net6.0\runtimes\win-x86\native\openal32.dll
 D:\gabri\Projets\PAS\obj\Debug\net6.0\PAS.csproj.AssemblyReference.cache
 D:\gabri\Projets\PAS\obj\Debug\net6.0\PAS.csproj.CopyComplete
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.csproj.AssemblyReference.cache
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.AssemblyInfoInputs.cache
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.AssemblyInfo.cs
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.csproj.CoreCompileInputs.cache
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.sourcelink.json
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.dll
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\refint\PAS.dll
+C:\Users\yvann\source\repos\PAS\obj\Debug\net6.0\PAS.pdb
