@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EventArgs = PAS.Engine.EventArgs;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
@@ -18,10 +19,10 @@ namespace PAS.Content.Widgets.ClassSelection
             sprite.TextureRect = new IntRect(0, 0, 16, 16);
         }
 
-        public override void OnClick(RenderWindow window)
+        public override void OnClick(System.EventArgs eventArgs)
         {
             PASEventHandler.GetInstance().TriggerEvent(new ClassScrollRightEvent());
-            base.OnClick(window);
+            base.OnClick(eventArgs);
         }
 
        

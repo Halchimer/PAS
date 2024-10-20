@@ -1,10 +1,6 @@
 ﻿using PAS.Engine;
 using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SFML.System;
 
 namespace PAS.Content.Widgets
 {
@@ -14,14 +10,14 @@ namespace PAS.Content.Widgets
         public StartButton() 
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
-            AddText("CONFIRM", AssetLoader.GetInstance().GetFont("main"), 9, new SFML.System.Vector2f(12f, 0f));
+            AddText("CONFIRM", AssetLoader.GetInstance().GetFont("main"), new Vector2f(9f, 4f));
             _text.Color = new Color(50, 50, 50);
         }
-        public override void OnClick(RenderWindow window)
+        public override void OnClick(System.EventArgs eventArgs)
         {
 
             PASEventHandler.GetInstance().TriggerEvent(new ConfirmCharacterEvent());
-            base.OnClick(window);
+            base.OnClick(eventArgs);
         }
     }
 }

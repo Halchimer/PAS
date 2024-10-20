@@ -1,37 +1,27 @@
 ﻿using PAS.Engine;
-using SFML.System;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SFML.Graphics;
 
 namespace PAS.Content.Widgets
 {
     internal class MainMenuSkyBG : Actor
     {
-        public MainMenuSkyBG(): base() 
+        public MainMenuSkyBG(): base()
         {
+
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("sky_bg"));
+            
             sprite.Texture.Repeated = true;
         }
 
-        private float defaultXPos;
+        protected float SPEED = 0.5f;
 
-        const float SPEED = 2;
-
-        public override void Start()
-        {
-            defaultXPos = actorLocation.X;
-
-            base.Start();
-        }
+        private float _skyOffset = 0;
 
         public override void Tick()
         {
             float deltaTime = Game.GetInstance().DeltaTime;
-
-            sprite.TextureRect = new SFML.Graphics.IntRect((int)Math.Floor(sprite.TextureRect.Left - 15 * deltaTime), 0, 192, 108);
+            _skyOffset-=SPEED * deltaTime;
+            sprite.TextureRect = new IntRect((int)Math.Floor(_skyOffset), 0, 192, 108);
 
             base.Tick();
         }

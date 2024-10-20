@@ -1,53 +1,88 @@
 ﻿using SFML.Graphics;
+using NetEXT.Animation;
+using PAS.Content.VisualEffects;
+using PAS.Content.Widgets.Combat;
 using SFML.System;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAS.Engine
 {
-    internal class CharacterDeathEvent : Engine.Event
+    public enum CharacterActions
     {
-        public Character Subject { get; private set; }
-
-        public CharacterDeathEvent(Character character) : base() {
-            Subject = character;
-        }
-    }
-
-    internal class CharacterDamageEvent : Engine.Event
-    {
-        public Character Subject { get; private set; }
-        public Character Instigator { get; private set; }
-        public int Amount { get; private set; }
-
-        public CharacterDamageEvent(Character instigator, Character subject, int amount) : base()
-        {
-            Subject = subject;
-            Instigator = instigator;
-            Amount = amount;
-        }
+        None,
+        Attack,
+        Parry,
+        Ability
     }
 
     internal class Character : Actor
     {
-
+        public event EventHandler DieEvent;
+        
+        protected Animator<Sprite, string> _animator;
+        
+        protected HealthBar _healthBar;
         public string Name { get; protected set; }
+        
+        public string AbilityDescription { get; protected set; }
         public int BaseHealth { get; protected set; }
         public int Power { get; protected set; }
         public int AbilityCooldown { get; protected set; }
-
+        
         protected int health;
-        protected int cooldown;
+        public int cooldown;
+        public bool isParrying;
+        
+        public Character() : base()
+        {
+            _animator = new Animator<Sprite, string>();
+        }
 
-        public Character() : base() 
+        public override void Init(Vector2f location, Scene scene = null)
         {
             health = BaseHealth;
+            cooldown = AbilityCooldown;
+            base.Init(location, scene);
         }
-        public virtual void Ability() {}
+
+        public virtual void BindHealthBar(HealthBar healthBar)
+        {
+            _healthBar = healthBar;
+        }
+
+        public override void Start()
+        {
+            _healthBar.SetHeartCount(BaseHealth);
+            base.Start();
+        }
+        public void AddAnimation(string animName, int startFrame, int duration, int frameWidth, float animDuration)
+        {
+            FrameAnimation<Sprite> animation = new FrameAnimation<Sprite>();
+            
+            for(int i = startFrame; i < startFrame+duration; i++)
+                animation.AddFrame(1f, new IntRect(i*frameWidth, 0, frameWidth, sprite.TextureRect.Height));
+            
+            _animator.AddAnimation(animName, animation, Time.FromSeconds(animDuration));
+            
+        }
+
+        public void PlayAnimation(string animName, bool loopAnimation = false, bool stopOthers = false)
+        {
+            _animator.PlayAnimation(animName, loopAnimation, stopOthers);
+        }
+
+        public bool TryUseAbility(Character target)
+        {
+            if (cooldown >= AbilityCooldown)
+            {
+                Ability(target);
+                cooldown = 0;
+                return true;
+            }
+
+            return false;
+        }
+        
+        protected virtual void Ability(Character target = null) {}
 
         public virtual void Attack(Character target)
         {
@@ -57,7 +92,13 @@ namespace PAS.Engine
 
         public void Damage(int amount, Character instigator)
         {
-            PASEventHandler.GetInstance().TriggerEvent(new CharacterDamageEvent(instigator, this, amount));
+            if (isParrying)
+            {
+                isParrying = false;
+                OnParry(amount, instigator);
+                
+                return;
+            }
             
             health -= amount;
 
@@ -65,11 +106,54 @@ namespace PAS.Engine
 
             if(health <= 0)
             {
-                PASEventHandler.GetInstance().TriggerEvent(new CharacterDeathEvent(instigator));
+                OnDie(System.EventArgs.Empty);
             }
+            
+            _healthBar.SetHeartCount(health);
         }
 
+        public virtual void OnDie(System.EventArgs e)
+        {
+            DieEvent?.Invoke(this, e);
+        }
+        
         public virtual void OnRecieveDamage(int amount, Character instigator)
-        { }
+        {
+            
+        }
+
+        public virtual void OnParry(int amount, Character instigator) {}
+
+        public virtual void OnRoundComplete(CharacterActions action = CharacterActions.None)
+        {
+            if(action != CharacterActions.Parry)
+                isParrying = false;
+        }
+        public override void Draw()
+        {
+            _animator.Update(Time.FromSeconds(Game.GetInstance().DeltaTime));
+            _animator.Animate(sprite);
+            base.Draw();
+        }
+
+        public bool DoAction(CharacterActions action, Character enemy)
+        {
+            switch (action)
+            {
+                case CharacterActions.Attack:
+                    Attack(enemy);
+                    break;
+                case CharacterActions.Parry:
+                    parentScene.AddActorOfClass<ParryIndicatorEffectActor>(actorLocation, true);
+                    isParrying = true;
+                    break;
+                case CharacterActions.Ability:
+                    if (!TryUseAbility(enemy))
+                        return false;
+                    break;
+            }
+
+            return true;
+        }
     }
 }

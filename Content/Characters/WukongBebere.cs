@@ -14,6 +14,7 @@ namespace PAS.Content.Characters
         public WukongBebere() : base()
         {
             Name = "BEBER";
+            AbilityDescription = "Resurrection Ability : Survive from your death next round with 1 heart and 1 pow. Cooldown : 4 rounds.";
 
             BaseHealth = 3;
             Power = 2;
@@ -21,10 +22,9 @@ namespace PAS.Content.Characters
 
         }
 
-        public override void Ability()
+        protected override void Ability(Character target = null)
         {
-            if (cooldown >= AbilityCooldown) 
-                revive = true;
+            revive = true;
         }
 
         public override void OnRecieveDamage(int amount, Character instigator)
@@ -32,6 +32,7 @@ namespace PAS.Content.Characters
             if (health <= 0 && revive == true)
             {
                 health = 1;
+                _healthBar.SetHeartCount(health);
                 Power++;
                 revive = false;
             }

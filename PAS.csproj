@@ -2,14 +2,39 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>11</LangVersion>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SFML.Net" Version="2.6.0" />
+    <PackageReference Include="SFML.Net" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\csfml-audio-2.dll" />
+    <Content Include="bin\Debug\net6.0\csfml-graphics-2.dll" />
+    <Content Include="bin\Debug\net6.0\csfml-network-2.dll" />
+    <Content Include="bin\Debug\net6.0\csfml-system-2.dll" />
+    <Content Include="bin\Debug\net6.0\csfml-window-2.dll" />
+    <Content Include="bin\Debug\net6.0\libsndfile-1.dll" />
+    <Content Include="bin\Debug\net6.0\NetEXT.dll" />
+    <Content Include="bin\Debug\net6.0\shaders\scrollShader.glsl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NetEXT">
+      <HintPath>bin\Debug\net6.0\NetEXT.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

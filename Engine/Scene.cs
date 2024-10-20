@@ -1,10 +1,4 @@
-﻿using SFML.Graphics;
-using SFML.System;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SFML.System;
 
 namespace PAS.Engine
 {
@@ -23,22 +17,31 @@ namespace PAS.Engine
             previousScene = prevScene;
         }
 
-        public T AddActorOfClass<T>(Vector2f location) where T : Actor, new() 
+        public T AddActorOfClass<T>(Vector2f location, bool runStartFn = false) where T : Actor, new() 
         {
             sceneActors.Add(new T());
             sceneActors.Last().Init(location, this);
-
+            
+            if(runStartFn)
+                sceneActors.Last().Start();
+            
             return (T)sceneActors.Last();
         }
 
+        public void DeleteActor(Actor actor)
+        {
+            sceneActors.Remove(actor);
+        }
+        
         public virtual void Start() {}
-        public virtual void Tick(float deltaTime) { }
+        public virtual void Tick() { }
         public virtual void End() { }
 
 
         public void Render()
         {
-            foreach(var actor in sceneActors)
+            List<Actor> actorsToRender = new List<Actor>(sceneActors);
+            foreach(var actor in actorsToRender)
             {
                 actor.Draw();
             }
@@ -59,5 +62,7 @@ namespace PAS.Engine
             }
         }
         public Game GetGameInstance() { return parentGameInstance; }
+        
+        
     }
 }

@@ -7,37 +7,305 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91d2f8b8-b984-48dc-9c9d-105c1bc9abac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/StartButton.cs" afterDir="false" />
+    <list default="true" id="51e2e232-d4d4-49f4-b210-1f461cedc7f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/ClickedEventArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VisualEffects/ConfettiParticleEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VisualEffects/ParryIndicatorEffectActor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/CloudBG.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/Combat/DeathTextWidget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/Combat/HealthBar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/Combat/VictoryTextWidget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/CombatSceneBackground.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/MainMenuButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/CustomFont.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/CustomText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/TextActor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-audio-2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-graphics-2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-network-2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-system-2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-window-2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/libsndfile-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/shaders/scrollShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/pas.metadata.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/pas.projects.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/pas.metadata.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/pas.projects.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_12__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/pas.metadata.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/pas.projects.v7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_2024_15_13__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PAS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/PAS/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PAS/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/691c53cd-b04a-4ce2-93f8-279cbf86e6ba.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/7248f9fe-0264-4154-9804-91878f76f8c7.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/81bd9e24-6f19-40e0-8b82-5dd6e2a841d9.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/960a66e3-4e61-49fb-8c87-7939e999b716.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/c0e82a8a-6ffc-4c5d-a297-63ba5f391df7.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/e413ccd9-62e6-4c3a-82e8-0b859040bb15.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/1ae0da6b-235e-4427-bfe9-f380d74abfbe.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/4e7bbba8-b0ee-4281-a68b-dae0664eb866.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/717cb052-6965-4279-ab19-16b3077c34ee.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/8dda241b-c757-461d-bc6b-bb9771b2fe2a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PAS/FileContentIndex/e3f018e2-5d54-4858-a504-d3296b454979.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/PAS/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PAS/v17/.futdcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/PAS/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PAS/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/pas.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/pas.metadata.v7.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/pas.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/pas.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Damager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Healer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Healer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Tank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/WukongBebere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/WukongBebere.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/ClassSelectionScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/ClassSelectionScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/CombatScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/CombatScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/BackButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/CancelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/CancelButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonLeft.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonRight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonRight.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/StartButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/AbilityButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/AbilityButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/AttackButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/AttackButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/ParryButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/ParryButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/MainMenuLogoWidget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/MainMenuLogoWidget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/MainMenuSkyBG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/MainMenuSkyBG.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/PlayButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/QuitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/QuitButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Actor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/AssetLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/AssetLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Character.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Scene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PAS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PAS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NetEXT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/NetEXT.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/SFML.Audio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/SFML.Graphics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/SFML.System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/SFML.Window.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/healer_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/mainmenu_sky_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/mainmenu_sky_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/menu_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/menu_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-audio.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-graphics.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-system.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-window.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-audio.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-graphics.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-system.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-window.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libcsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm/native/libsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-audio.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-graphics.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-system.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-window.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libcsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-arm64/native/libsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-audio.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-graphics.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-system.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-window.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libcsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-audio.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-graphics.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-system.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-window.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libcsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libsfml-audio.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libsfml-graphics.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libsfml-system.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libsfml-window.so.2.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/FLAC.framework/FLAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/FLAC.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/FLAC.framework/Versions/A/FLAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/FLAC.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/FLAC.framework/Versions/Current/FLAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/FLAC.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/OpenAL.framework/OpenAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/OpenAL.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/OpenAL.framework/Versions/A/OpenAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/OpenAL.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/OpenAL.framework/Versions/Current/OpenAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/OpenAL.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/freetype.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/freetype.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/freetype.framework/Versions/A/freetype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/freetype.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/freetype.framework/Versions/Current/freetype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/freetype.framework/freetype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-audio.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-audio.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-graphics.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-graphics.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-system.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-system.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-window.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libcsfml-window.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libsfml-audio.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libsfml-graphics.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libsfml-system.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/libsfml-window.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/ogg.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/ogg.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/ogg.framework/Versions/A/ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/ogg.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/ogg.framework/Versions/Current/ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/ogg.framework/ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbis.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbis.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbis.framework/Versions/A/vorbis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbis.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbis.framework/Versions/Current/vorbis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbis.framework/vorbis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisenc.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisenc.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisenc.framework/Versions/A/vorbisenc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisenc.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisenc.framework/Versions/Current/vorbisenc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisenc.framework/vorbisenc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisfile.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisfile.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisfile.framework/Versions/A/vorbisfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisfile.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisfile.framework/Versions/Current/vorbisfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-arm64/native/vorbisfile.framework/vorbisfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/FLAC.framework/FLAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/FLAC.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/FLAC.framework/Versions/A/FLAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/FLAC.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/FLAC.framework/Versions/Current/FLAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/FLAC.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/OpenAL.framework/OpenAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/OpenAL.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/OpenAL.framework/Versions/A/OpenAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/OpenAL.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/OpenAL.framework/Versions/Current/OpenAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/OpenAL.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/freetype.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/freetype.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/freetype.framework/Versions/A/freetype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/freetype.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/freetype.framework/Versions/Current/freetype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/freetype.framework/freetype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-audio.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-audio.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-graphics.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-graphics.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-system.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-system.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-window.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libcsfml-window.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libsfml-audio.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libsfml-graphics.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libsfml-system.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/libsfml-window.2.6.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/ogg.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/ogg.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/ogg.framework/Versions/A/ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/ogg.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/ogg.framework/Versions/Current/ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/ogg.framework/ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbis.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbis.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbis.framework/Versions/A/vorbis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbis.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbis.framework/Versions/Current/vorbis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbis.framework/vorbis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisenc.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisenc.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisenc.framework/Versions/A/vorbisenc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisenc.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisenc.framework/Versions/Current/vorbisenc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisenc.framework/vorbisenc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisfile.framework/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisfile.framework/Versions/A/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisfile.framework/Versions/A/vorbisfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisfile.framework/Versions/Current/Resources/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisfile.framework/Versions/Current/vorbisfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx-x64/native/vorbisfile.framework/vorbisfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/csfml-audio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/csfml-graphics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/csfml-system.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/csfml-window.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/openal32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/csfml-audio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/csfml-graphics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/csfml-system.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/csfml-window.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/openal32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CopyComplete" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PAS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PAS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PAS.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PAS.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PAS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PAS.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PAS.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PAS.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -46,18 +314,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="tom" />
-      </map>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GLSL Shader" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4627602695ae459198965b45eda5cf65cc00/0b/8d3e6f9e/Image.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4627602695ae459198965b45eda5cf65cc00/25/80f83bec/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4627602695ae459198965b45eda5cf65cc00/e4/5fccda53/Font.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/560d7ec9c0f442c5998eecf674be73c12c00/58/38ae5bc2/ObjectBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a95a433aa82049be9bd399e26a51712b16000/2b/9c4e73ad/UniversalEmitter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a95a433aa82049be9bd399e26a51712b16000/66/8b2e1581/FadeAnimation`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Documents/NetEXT test/netext/NetEXT Examples/Fireworks Example.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Documents/SFML_NET_Mod/SFML.Net-2.2-sources/SFML.Net-2.2/src/Graphics/Font.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Documents/SFML_NET_Mod/SFML.Net-2.2-sources/SFML.Net-2.2/src/Graphics/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../BlackJack/JeuBlackJack_DenivelleGabriel.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2nTW0XOz6vhJAmkeCdcffIalKHU" />
+  <component name="ProjectId" id="2ncIzSwWiCs86o3gUII4gk6055n" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -69,13 +358,13 @@
   "keyToString": {
     ".NET Project.PAS.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "gab",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -102,15 +391,22 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="91d2f8b8-b984-48dc-9c9d-105c1bc9abac" name="Changes" comment="" />
-      <created>1728997327218</created>
+      <changelist id="51e2e232-d4d4-49f4-b210-1f461cedc7f9" name="Changes" comment="" />
+      <created>1729266203506</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728997327218</updated>
-      <workItem from="1728997328879" duration="3506000" />
-      <workItem from="1729005973512" duration="2502000" />
-      <workItem from="1729063689934" duration="696000" />
-      <workItem from="1729077198235" duration="2010000" />
+      <updated>1729266203506</updated>
+      <workItem from="1729266205707" duration="33000" />
+      <workItem from="1729266797399" duration="2250000" />
+      <workItem from="1729274527434" duration="11232000" />
+      <workItem from="1729338807261" duration="817000" />
+      <workItem from="1729340075399" duration="3010000" />
+      <workItem from="1729343119520" duration="6896000" />
+      <workItem from="1729368472631" duration="74000" />
+      <workItem from="1729368602093" duration="15238000" />
+      <workItem from="1729424678098" duration="297000" />
+      <workItem from="1729451936892" duration="1610000" />
+      <workItem from="1729453616023" duration="11047000" />
     </task>
     <servers />
   </component>

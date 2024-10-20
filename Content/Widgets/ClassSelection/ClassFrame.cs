@@ -1,12 +1,8 @@
 ﻿using PAS.Engine;
 using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SFML.System;
 using PAS.Content.Scenes;
+using SFML.System;
+using SFML.Window;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
@@ -19,16 +15,18 @@ namespace PAS.Content.Widgets.ClassSelection
     internal class ClassFrame<T> : ClassFrame where T : Character, new() 
     {
         Sprite characterSprite;
-        Text characterNameText;
+        CustomText characterNameText;
 
         public ClassFrame() : base() 
         { 
             sprite = new Sprite(AssetLoader.GetInstance().GetTexture("class_frame"));
-
+            
             T temp_character = new T();
             characterSprite = temp_character.GetSprite();
-            characterNameText = new Text(temp_character.Name, AssetLoader.GetInstance().GetFont("pico"));
-            characterNameText.CharacterSize = 8;
+            if(characterSprite != null)
+                characterSprite.TextureRect = new IntRect(0, 0, 32, 32);
+            characterNameText = new CustomText(temp_character.Name, AssetLoader.GetInstance().GetFont("mini"));
+            characterNameText.Color = Color.White;
         }
 
         public override void Init(Vector2f location, Scene scene = null)
@@ -63,7 +61,10 @@ namespace PAS.Content.Widgets.ClassSelection
             if (characterSprite != null)
                 characterSprite.Position = (snapSprite ? flooredLocation : location) + new Vector2f(4,19);
             if (characterNameText != null)
-                characterNameText.Position = (snapSprite ? flooredLocation : location) + new Vector2f(4,53);
+                characterNameText.Position = (snapSprite ? flooredLocation : location) + new Vector2f(
+                    sprite.Texture.Size.X/2 - characterNameText.Texture.Size.X/2,
+                    57
+                );
 
         }
 

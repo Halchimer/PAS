@@ -1,31 +1,28 @@
 ﻿using PAS.Engine;
 using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SFML.System;
+using SFML.Window;
+using EventArgs = PAS.Engine.EventArgs;
 
 namespace PAS.Content.Widgets.Combat
 {
-    internal class PlayerParryEvent : Engine.Event
-    {
-        public PlayerParryEvent() : base() { }
-    }
     internal class ParryButton : Engine.Button
     {
+        PlayerActionSendEventArgs buttonEventArgs;
         public ParryButton() : base()
         { 
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
 
-            AddText("ATTACK", AssetLoader.GetInstance().GetFont("upheavtt"), 9, new SFML.System.Vector2f(12f, 0f));
+            AddText("PARRY", AssetLoader.GetInstance().GetFont("main"), new Vector2f(14f, 4f));
+            _text.Color = new Color(50, 50, 50);
+            
+            buttonEventArgs = new PlayerActionSendEventArgs();
+            buttonEventArgs.Action = CharacterActions.Parry;
         }
 
-        public override void OnClick(RenderWindow window)
+        public override void OnClick(System.EventArgs eventArgs)
         {
-            PASEventHandler.GetInstance().TriggerEvent(new PlayerParryEvent());
-
-            base.OnClick(window);
+            base.OnClick(buttonEventArgs);
         }
     }
 }

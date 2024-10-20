@@ -1,10 +1,8 @@
 ﻿using PAS.Engine;
 using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SFML.System;
+using SFML.Window;
+using EventArgs = PAS.Engine.EventArgs;
 
 namespace PAS.Content.Widgets
 {
@@ -13,14 +11,14 @@ namespace PAS.Content.Widgets
         public QuitButton() 
         {
             sprite = new SFML.Graphics.Sprite(AssetLoader.GetInstance().GetTexture("button"));
-            AddText("QUIT", AssetLoader.GetInstance().GetFont("main"), 9, new SFML.System.Vector2f(18f, 0f));
+            AddText("QUIT", AssetLoader.GetInstance().GetFont("main"), new Vector2f(18f, 4f));
             _text.Color = new Color(50, 50, 50);
         }
-        public override void OnClick(RenderWindow window)
+        public override void OnClick(System.EventArgs eventArgs)
         {
             
             Game.GetInstance().Quit();
-            base.OnClick(window);
+            base.OnClick(eventArgs);
         }
     }
 }

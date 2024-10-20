@@ -1,13 +1,4 @@
 ﻿using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SFML.Graphics;
-using static SFML.Window.Mouse;
-using static System.Net.Mime.MediaTypeNames;
-using SFML.Window;
 using SFML.System;
 
 namespace PAS.Engine
@@ -23,9 +14,16 @@ namespace PAS.Engine
         private Clock deltaTimeClock;
 
         private Scene currentScene = null;  // Current active scene
-        private Game() {} // The constructor is private, removing the ability to create multiple game instances during execution.
+
+        private Game() // The constructor is private, removing the ability to create multiple game instances during execution.
+        {
+            Rand = new Random();
+            
+        } 
 
         private static Game _instance; // Stores the only game instance
+        
+        public Random Rand { get; private set; }
 
         public float DeltaTime { get; private set; }
 
@@ -48,7 +46,7 @@ namespace PAS.Engine
             if (scene != null) // If a scene is active, execute its end script before changing scene.
                 scene.End();
 
-            currentScene = scene;
+            currentScene = scene; 
 
             clock.Restart();
             currentScene.Start();
@@ -70,8 +68,8 @@ namespace PAS.Engine
             View pixelPerfectView = new View(new Vector2f(96, 54),new Vector2f(192, 108));
 
             window.SetView(pixelPerfectView);
-
-            window.Closed += new EventHandler(OnClose);
+    
+            //window.Closed += new EventHandler(OnClose);
         }
         public void StartGame() // Executes scene actors startup function and initialize main loop
         {
@@ -82,18 +80,17 @@ namespace PAS.Engine
         {
             while(window.IsOpen)
             {
-                deltaTimeClock.Restart();
-
                 window.DispatchEvents();
-
-                currentScene.Tick(DeltaTime);
+                
+                DeltaTime = deltaTimeClock.Restart().AsSeconds();
                 currentScene.RunActorTicks();
-
+                currentScene.Tick();
+                
                 window.Clear();
                 currentScene.Render();
                 window.Display();
                 
-                DeltaTime = deltaTimeClock.ElapsedTime.AsSeconds();
+                
             }
         }
         public void OnClose(object sender, EventArgs e)

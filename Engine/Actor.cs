@@ -1,10 +1,5 @@
 ﻿using SFML.Graphics;
 using SFML.System;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace PAS.Engine
@@ -27,7 +22,8 @@ namespace PAS.Engine
         protected Vector2f actorScale;
 
         private _MovementDataStruct _movementStruct;
-        private bool moving;
+        protected bool moving;
+        
         public Actor() {
             actorScale = new Vector2f(1f, 1f);
         }

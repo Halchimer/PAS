@@ -1,11 +1,8 @@
 ﻿using PAS.Engine;
 using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SFML.System;
+using SFML.Window;
+using EventArgs = PAS.Engine.EventArgs;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
@@ -21,10 +18,10 @@ namespace PAS.Content.Widgets.ClassSelection
             
         }
 
-        public override void OnClick(RenderWindow window)
+        public override void OnClick(System.EventArgs eventArgs)
         {
             PASEventHandler.GetInstance().TriggerEvent(new ClassScrollLeftEvent());
-            base.OnClick(window);
+            base.OnClick(eventArgs);
         }
 
         public override void SetLocation(Vector2f location, bool snapSprite = true)

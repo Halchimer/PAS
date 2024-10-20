@@ -1,12 +1,6 @@
 using PAS.Engine;
-using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SFML.System;
-using System.Reflection.Metadata.Ecma335;
+using SFML.Window;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
@@ -18,7 +12,7 @@ namespace PAS.Content.Widgets.ClassSelection
         private int _playableClassNumber;
     
         
-        const int FRAMES_MARGIN = 116;
+        const int FRAMES_MARGIN = 96;
         public ClassSelector() : base() 
         {}
 
@@ -31,7 +25,7 @@ namespace PAS.Content.Widgets.ClassSelection
                 parentScene.AddActorOfClass<ClassFrame<T>>(
                     new Vector2f(
                         _playableClassNumber * FRAMES_MARGIN + Game.GetInstance().GetWindow().Size.X/20 - AssetLoader.GetInstance().GetTexture("class_frame").Size.X/2,
-                        24f
+                        16f
                     )
                 )
             );
@@ -39,51 +33,27 @@ namespace PAS.Content.Widgets.ClassSelection
             _playableClassNumber++;
         }
 
-        public override void Tick()
+        public void Scroll(int amount)
         {
-            base.Tick();
-            Stack<Engine.Event> eventStack = PASEventHandler.GetInstance().PollEvents();
-            while (eventStack.Count > 0)
-            {
-                Engine.Event e = eventStack.Pop();
+            if (_index + amount < 0 || _index + amount >= classFrames.Count)
+                return;
+            _index += amount;
+            UpdateFrames();
+        }
 
-                if (e.GetType() == typeof(ClassScrollRightEvent))
-                {
-                    if (_index < _playableClassNumber-1)
-                    {
-                        _index++;
-                        foreach (ClassFrame frame in classFrames)
-                        {
-                            frame.MoveToLocationOverTime(
-                                frame.defaultCharacterPosition - _index * new Vector2f(FRAMES_MARGIN, 0f),
-                                1f
-                            );
-                        }
-                    }
-                    continue;
-                }
-                if (e.GetType() == typeof(ClassScrollLeftEvent))
-                {
-                    if (_index > 0)
-                    {
-                        _index--;
-                        foreach (ClassFrame frame in classFrames)
-                        {
-                            frame.MoveToLocationOverTime(
-                                frame.defaultCharacterPosition - _index * new Vector2f(FRAMES_MARGIN, 0f),
-                                1f
-                            );
-                        }
-                    }
-                    continue;
-                }
-                if(e.GetType() == typeof(ConfirmCharacterEvent))
-                {
-                    classFrames[_index].ConfirmCharacter();
-                    continue;
-                }
+        public void ConfirmCharacter()
+        {
+            classFrames[_index].ConfirmCharacter();
+        }
+        public void UpdateFrames()
+        {
+            foreach (ClassFrame frame in classFrames)
+            {
+                frame.MoveToLocationOverTime(
+                    frame.defaultCharacterPosition - _index * new Vector2f(FRAMES_MARGIN, 0f),
+                    1f
+                );
             }
-            
         }
     }
 }

@@ -1,18 +1,12 @@
-﻿using SFML.Audio;
+﻿
 using SFML.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace PAS.Engine
 {
     internal class AssetLoader
     {
         private Dictionary<string, Texture> texDict = new Dictionary<string, Texture>();
-        private Dictionary<string, Font> fontDict = new Dictionary<string, Font>();
-        private Dictionary<string, Sound> soundDict = new Dictionary<string, Sound>();
+        private Dictionary<string, CustomFont> fontDict = new Dictionary<string, CustomFont>();
+        //private Dictionary<string, Sound> soundDict = new Dictionary<string, Sound>();
 
         // Singleton Setup
 
@@ -38,22 +32,20 @@ namespace PAS.Engine
             texDict.Remove(name);
         }
 
-        public void LoadFont(string path, string name ) 
+        public void LoadFont(string path, string name, int characterSize, int characterSpacing=1 ) 
         {
-            Font font = new Font(path);
-            font.SetSmooth(false);
+            CustomFont font = new CustomFont(path, characterSize, characterSpacing);
             fontDict.Add(name, font);
         }
         public void RemoveFont(string name)
         {
-            fontDict[name].Dispose();
             fontDict.Remove(name);
         }
 
         public Texture GetTexture(string name) {
             return texDict[name];
         }
-        public Font GetFont(string name)
+        public CustomFont GetFont(string name)
         {
             return fontDict[name];
         }

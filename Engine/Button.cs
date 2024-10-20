@@ -1,46 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using SFML.Audio;
-using SFML.Window;
+﻿using SFML.Window;
 using SFML.Graphics;
 using SFML.System;
 
 namespace PAS.Engine
 {
+    internal class EventArgs
+    {
+        public EventArgs(RenderWindow window)
+        {
+            Window = window;
+        }
+
+        public RenderWindow Window { get; private set; }
+    }
+
     internal class Button : Actor
     {
-
-        protected Text _text;
+        public event EventHandler Clicked;
+        
+        protected CustomText _text;
         private Vector2f _text_offset = new Vector2f(0.0f,0.0f);
 
-        private bool _hasClicked = false;
+        private static bool _hasClicked = false;
         private bool _hasHovered = false;
         public Button() : base() {
         }
 
-        public void AddText(string text, Font font,uint character_size , Vector2f textOffset)
+        public void AddText(string text, CustomFont font , Vector2f textOffset)
         {
-            _text = new Text(text, font);
+            _text = new CustomText(text, font);
             _text.Position = actorLocation + textOffset;
-            _text.CharacterSize = character_size;
             _text_offset = textOffset;
         }
 
-        public Vector2f getRelativeMousePos()
+        public Vector2i getRelativeMousePos()
         {
             Vector2i mousePos = Mouse.GetPosition(parentScene.GetGameInstance().GetWindow())/10;
-            return new Vector2f(
-                mousePos.X/actorScale.X - actorLocation.X,
-                mousePos.Y / actorScale.Y - actorLocation.Y
+            return new Vector2i(
+                (int)(mousePos.X / actorScale.X - actorLocation.X),
+                (int)(mousePos.Y / actorScale.Y - actorLocation.Y)
             );
         }
         public void OnClickCheckCall(RenderWindow window)
         {
-            if (sprite.TextureRect.Contains(getRelativeMousePos()))
+            Vector2i mousePos = getRelativeMousePos();
+            if (sprite.TextureRect.Contains(mousePos.X, mousePos.Y))
             {
                 if(!_hasHovered)
                 {
@@ -51,7 +55,7 @@ namespace PAS.Engine
                 if (Mouse.IsButtonPressed(Mouse.Button.Left))
                 {
                     if (!_hasClicked)
-                        OnClick(window);
+                        OnClick(System.EventArgs.Empty);
 
                     _hasClicked = true;
                 }
@@ -67,7 +71,7 @@ namespace PAS.Engine
                 }
             }
         }
-
+        
         public override void Tick()
         {
             OnClickCheckCall(Game.GetInstance().GetWindow());
@@ -75,7 +79,10 @@ namespace PAS.Engine
             base.Tick();
         }
 
-        public virtual void OnClick(RenderWindow window) { }
+        public virtual void OnClick(System.EventArgs eventArgs)
+        {
+            Clicked?.Invoke(this, eventArgs);
+        }
 
         public virtual void Hover() { }
         public virtual void Unhover() { }
@@ -104,4 +111,5 @@ namespace PAS.Engine
         }
 
     }
+    
 }
