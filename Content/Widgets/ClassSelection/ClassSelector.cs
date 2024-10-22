@@ -6,7 +6,7 @@ namespace PAS.Content.Widgets.ClassSelection
 {
     internal class ClassSelector : Engine.Actor
     {
-        List<ClassFrame> classFrames = new List<ClassFrame>();
+        public List<ClassFrame> classFrames = new List<ClassFrame>();
         
         private int _index;
         private int _playableClassNumber;
@@ -41,6 +41,10 @@ namespace PAS.Content.Widgets.ClassSelection
             UpdateFrames();
         }
 
+        public int GetIndex()
+        {
+            return _index;
+        }
         public void ConfirmCharacter()
         {
             classFrames[_index].ConfirmCharacter();

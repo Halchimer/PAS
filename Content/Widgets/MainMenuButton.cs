@@ -11,7 +11,7 @@ namespace PAS.Content.Widgets
         {
             sprite = new Sprite(AssetLoader.GetInstance().GetTexture("button"));
             AddText("MAIN MENU", AssetLoader.GetInstance().GetFont("main"), new Vector2f(3f,4));
-            _text.Color = new Color(5,5,5);
+            _text.Color = new Color(50,50,50);
         }
 
         public override void OnClick(System.EventArgs eventArgs)

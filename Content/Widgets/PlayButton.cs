@@ -20,11 +20,5 @@ namespace PAS.Content.Widgets
             _text.Color = new Color(50, 50, 50);
         }
         
-        public override void OnClick(System.EventArgs eventArgs)
-        {
-            Game.GetInstance().SetScene(new Scenes.ClassSelectionScene(parentScene));
-
-            base.OnClick(eventArgs);
-        }
     }
 }

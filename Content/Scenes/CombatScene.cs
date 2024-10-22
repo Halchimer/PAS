@@ -82,12 +82,12 @@ namespace PAS.Content.Scenes
         {
             if (_isPaused)
                 return;
-
-            _tickEllapsedTimeCounter += Game.GetInstance().DeltaTime;
-            
             if (IsPlayerTurn)
                 return;
-            if (_tickEllapsedTimeCounter < 1)
+
+            _tickEllapsedTimeCounter += Game.GetInstance().DeltaTime;
+
+            if (_tickEllapsedTimeCounter < 2)
                 return;
             _tickEllapsedTimeCounter = 0;
             

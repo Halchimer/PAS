@@ -10,7 +10,7 @@ namespace PAS.Content.Characters
         {
             sprite = new Sprite(AssetLoader.GetInstance().GetTexture("healer"));
             Name = "HEALER";
-            AbilityDescription = "Healing Ability : Restores 2 hearts. Cooldown : 2 rounds.";
+            AbilityDescription = "Healing Ability : \nRestores 2 hearts. \nCooldown : 2 rounds.";
             
             BaseHealth = 4;
             Power = 1;

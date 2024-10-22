@@ -93,6 +93,11 @@ namespace PAS.Engine
                 Game.GetInstance().GetWindow().Draw(_text);
         }
 
+        public CustomText GetText()
+        {
+            return _text;
+        }
+        
         public override void SetLocation(Vector2f location, bool snapSprite = true)
         {   
             if(_text != null)

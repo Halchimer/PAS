@@ -1,0 +1,5 @@
+D:\gabri\Projets\PAS\obj\Debug\net8.0\PAS.GeneratedMSBuildEditorConfig.editorconfig
+D:\gabri\Projets\PAS\obj\Debug\net8.0\PAS.AssemblyInfoInputs.cache
+D:\gabri\Projets\PAS\obj\Debug\net8.0\PAS.AssemblyInfo.cs
+D:\gabri\Projets\PAS\obj\Debug\net8.0\PAS.csproj.CoreCompileInputs.cache
+D:\gabri\Projets\PAS\obj\Debug\net8.0\PAS.sourcelink.json

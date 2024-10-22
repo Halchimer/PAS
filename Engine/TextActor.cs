@@ -9,5 +9,13 @@ namespace PAS.Engine
         {
             sprite = new CustomText(text, font);
         }
+        public TextActor() : base()
+        {
+        }
+
+        public void SetText(CustomText text)
+        {
+            sprite = text;
+        }
     }
 }

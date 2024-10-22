@@ -18,7 +18,7 @@ namespace PAS.Content.Characters
         {
             sprite = new Sprite(AssetLoader.GetInstance().GetTexture("tank"));
             Name = "TANK";
-            AbilityDescription = "Pyromania Ability : Sacrifice 1 heart and increase power by 1 for the next round. Cooldown : 2 rounds.";
+            AbilityDescription = "Pyromania Ability : \nSacrifice 1 heart and increase power \nby 1 for the next round. \nCooldown : 2 rounds.";
             
             BaseHealth = 5;
             Power = 1;
@@ -72,7 +72,7 @@ namespace PAS.Content.Characters
         public override void OnRoundComplete(CharacterActions action = CharacterActions.None)
         {
             base.OnRoundComplete(action);
-            if (!isPowAttackActive || action == CharacterActions.Ability)
+            if (!isPowAttackActive || action == CharacterActions.None || action == CharacterActions.Ability)
                 return;
             Power--;
             isPowAttackActive = false;

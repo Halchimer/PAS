@@ -42,9 +42,12 @@ namespace PAS
             AssetLoader.GetInstance().LoadTexture("healer_sheet.png", "healer");
             AssetLoader.GetInstance().LoadTexture("tank_sheet.png", "tank");
             AssetLoader.GetInstance().LoadTexture("damager_sheet.png", "damager");
+            AssetLoader.GetInstance().LoadTexture("wukong_beber_sheet.png", "beber");
             
             AssetLoader.GetInstance().LoadTexture("heart.png", "heart");
             AssetLoader.GetInstance().GetTexture("heart").Repeated = true;
+            AssetLoader.GetInstance().LoadTexture("class_frame_stats_icon.png", "stats_icons");
+            AssetLoader.GetInstance().GetTexture("stats_icons").Repeated = true;
             AssetLoader.GetInstance().LoadTexture("parry_indicator_effect.png", "parry_effect");
             
             AssetLoader.GetInstance().LoadTexture("confetti_particles.png", "confetti");

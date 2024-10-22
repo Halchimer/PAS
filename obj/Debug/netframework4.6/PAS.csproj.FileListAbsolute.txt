@@ -1,0 +1,5 @@
+D:\gabri\Projets\PAS\obj\Debug\netframework4.6\PAS.csproj.AssemblyReference.cache
+D:\gabri\Projets\PAS\obj\Debug\netframework4.6\PAS.GeneratedMSBuildEditorConfig.editorconfig
+D:\gabri\Projets\PAS\obj\Debug\netframework4.6\PAS.AssemblyInfoInputs.cache
+D:\gabri\Projets\PAS\obj\Debug\netframework4.6\PAS.AssemblyInfo.cs
+D:\gabri\Projets\PAS\obj\Debug\netframework4.6\PAS.csproj.CoreCompileInputs.cache

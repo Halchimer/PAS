@@ -12,7 +12,7 @@ namespace PAS.Content.Characters
         {
             sprite = new Sprite(AssetLoader.GetInstance().GetTexture("damager"));
             Name = "DAMAGER";
-            AbilityDescription = "Reflect Ability : During next round the Damager reflects any damage taken, but still takes them. Cooldown : 3 rounds.";
+            AbilityDescription = "Reflect Ability : \nDuring next round the Damager reflects \nany damage taken, but still takes them. \nCooldown : 3 rounds.";
 
             BaseHealth = 3;
             Power = 2;
