@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+// DEPRECATED
+
+// Custom (and bad) event system i made before i learnt about C# events & delegates.
 namespace PAS.Engine
 {
     internal class Event

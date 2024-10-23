@@ -20,6 +20,13 @@ namespace PAS.Content.Characters
 
         }
 
+        /// <summary>
+        /// Initializes the Damager character with the given location and scene.
+        /// Configures initial animations such as idle, attack, parry, hit, and ability
+        /// before calling the base class Init method.
+        /// </summary>
+        /// <param name="location">The position where the character will be initialized.</param>
+        /// <param name="scene">Optional scene to associate with the character during initialization.</param>
         public override void Init(Vector2f location, Scene scene = null)
         {
             AddAnimation("idle", 0, 7, 32, 0.7f);

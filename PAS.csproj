@@ -37,4 +37,53 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\button.png" />
+    <EmbeddedResource Include="Resources\button.png" />
+    <None Remove="Resources\class_frame.png" />
+    <EmbeddedResource Include="Resources\class_frame.png" />
+    <None Remove="Resources\class_frame_stats_icon.png" />
+    <EmbeddedResource Include="Resources\class_frame_stats_icon.png" />
+    <None Remove="Resources\class_select_bg.png" />
+    <EmbeddedResource Include="Resources\class_select_bg.png" />
+    <None Remove="Resources\class_selector_button.png" />
+    <EmbeddedResource Include="Resources\class_selector_button.png" />
+    <None Remove="Resources\cloud_layer.png" />
+    <EmbeddedResource Include="Resources\cloud_layer.png" />
+    <None Remove="Resources\combat_bg.png" />
+    <EmbeddedResource Include="Resources\combat_bg.png" />
+    <None Remove="Resources\confetti_particles.png" />
+    <EmbeddedResource Include="Resources\confetti_particles.png" />
+    <None Remove="Resources\damager_sheet.png" />
+    <EmbeddedResource Include="Resources\damager_sheet.png" />
+    <None Remove="Resources\font.png" />
+    <EmbeddedResource Include="Resources\font.png" />
+    <None Remove="Resources\healer_sheet.png" />
+    <EmbeddedResource Include="Resources\healer_sheet.png" />
+    <None Remove="Resources\heart.png" />
+    <EmbeddedResource Include="Resources\heart.png" />
+    <None Remove="Resources\logo.png" />
+    <EmbeddedResource Include="Resources\logo.png" />
+    <None Remove="Resources\main_menu_button.png" />
+    <EmbeddedResource Include="Resources\main_menu_button.png" />
+    <None Remove="Resources\mainmenu_sky_bg.png" />
+    <EmbeddedResource Include="Resources\mainmenu_sky_bg.png" />
+    <None Remove="Resources\menu_bg.png" />
+    <EmbeddedResource Include="Resources\menu_bg.png" />
+    <None Remove="Resources\mini_font.png" />
+    <EmbeddedResource Include="Resources\mini_font.png" />
+    <None Remove="Resources\parry_indicator_effect.png" />
+    <EmbeddedResource Include="Resources\parry_indicator_effect.png" />
+    <None Remove="Resources\tank_sheet.png" />
+    <EmbeddedResource Include="Resources\tank_sheet.png" />
+    <None Remove="Resources\turn_indicator.png" />
+    <EmbeddedResource Include="Resources\turn_indicator.png" />
+    <None Remove="Resources\victory.png" />
+    <EmbeddedResource Include="Resources\victory.png" />
+    <None Remove="Resources\wukong_beber_sheet.png" />
+    <EmbeddedResource Include="Resources\wukong_beber_sheet.png" />
+    <None Remove="Resources\you_died.png" />
+    <EmbeddedResource Include="Resources\you_died.png" />
+  </ItemGroup>
+
 </Project>

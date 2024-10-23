@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PAS/1.0.0": {
+        "dependencies": {
+          "SFML.Net": "2.2.0",
+          "NetEXT": "1.8.0.0"
+        },
+        "runtime": {
+          "PAS.dll": {}
+        }
+      },
+      "Baseclass.Contrib.Nuget.Output/1.0.0": {},
+      "SFML.Net/2.2.0": {
+        "dependencies": {
+          "Baseclass.Contrib.Nuget.Output": "1.0.0"
+        },
+        "runtime": {
+          "lib/sfmlnet-graphics-2.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          },
+          "lib/sfmlnet-system-2.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          },
+          "lib/sfmlnet-window-2.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "NetEXT/1.8.0.0": {
+        "runtime": {
+          "NetEXT.dll": {
+            "assemblyVersion": "1.8.0.0",
+            "fileVersion": "1.8.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PAS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Baseclass.Contrib.Nuget.Output/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-skMc2Jrdb2B7Kt+z5SfvdsauiOuo/znkD35UX/YjoBvjLcGoX9wkMEjFugIUeJ+hoDqUWY02v3CMzCnUBZByww==",
+      "path": "baseclass.contrib.nuget.output/1.0.0",
+      "hashPath": "baseclass.contrib.nuget.output.1.0.0.nupkg.sha512"
+    },
+    "SFML.Net/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iedBL3yrWJcVOABOfYYVsg6qS4xoVUgPdtWZ5GlN7u/iwtwoN99KcnzyWmFAkMPvWnsS5/VAAseth3uQEZiUQQ==",
+      "path": "sfml.net/2.2.0",
+      "hashPath": "sfml.net.2.2.0.nupkg.sha512"
+    },
+    "NetEXT/1.8.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

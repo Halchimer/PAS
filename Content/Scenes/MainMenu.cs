@@ -62,7 +62,7 @@ namespace PAS.Content.Scenes
             if (!shouldPlay)
                 return;
             ellapsedTimeBeforePlay += Game.GetInstance().DeltaTime;
-            if (ellapsedTimeBeforePlay < 2f)
+            if (ellapsedTimeBeforePlay < 1f)
                 return;
             Game.GetInstance().SetScene(new ClassSelectionScene(new MainMenu()));
         }

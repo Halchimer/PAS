@@ -8,8 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51e2e232-d4d4-49f4-b210-1f461cedc7f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Scenes/CreditScene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Widgets/CreditsButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/Combat/TurnIndicator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Characters/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Damager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Characters/Healer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Healer.cs" afterDir="false" />
@@ -18,23 +17,61 @@
       <change beforePath="$PROJECT_DIR$/Content/Scenes/ClassSelectionScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/ClassSelectionScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/CombatScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/CombatScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassFrame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/MainMenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/MainMenuButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/CancelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/CancelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonLeft.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonRight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonRight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/AbilityButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/AbilityButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/ParryButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/ParryButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/PlayButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/QuitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/QuitButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Actor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/AssetLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/AssetLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/CustomFont.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CustomFont.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/CustomText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CustomText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/PASEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/PASEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Scene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/TextActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/TextActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PAS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PAS.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/menu_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/menu_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_frame_stats_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_select_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_selector_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cloud_layer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/combat_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/confetti_particles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-audio-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-graphics-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-network-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-system-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-window-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/damager_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/healer_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/main_menu_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/mainmenu_sky_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/menu_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/mini_font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/parry_indicator_effect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tank_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/victory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/wukong_beber_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/you_died.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PAS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PAS.dll" afterDir="false" />
@@ -58,6 +95,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4627602695ae459198965b45eda5cf65cc00/0b/8d3e6f9e/Image.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4627602695ae459198965b45eda5cf65cc00/25/80f83bec/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
@@ -86,20 +132,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.PAS.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.PAS.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PAS" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -146,6 +193,9 @@
       <workItem from="1729537946665" duration="8771000" />
       <workItem from="1729579332213" duration="1207000" />
       <workItem from="1729585317977" duration="110000" />
+      <workItem from="1729591193198" duration="2709000" />
+      <workItem from="1729599674561" duration="5195000" />
+      <workItem from="1729684477522" duration="9346000" />
     </task>
     <servers />
   </component>
@@ -156,5 +206,9 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

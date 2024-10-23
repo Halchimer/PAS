@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39f24e3601adcc7e1d8fc81aa343c02260d1bdf2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc2e67ace80af4cc08f2c0d8b940ba93aa8f117")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

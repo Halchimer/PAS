@@ -1,8 +1,6 @@
 ﻿using PAS.Engine;
 using SFML.Graphics;
 using SFML.System;
-using SFML.Window;
-using EventArgs = PAS.Engine.EventArgs;
 
 namespace PAS.Content.Widgets.ClassSelection
 {
