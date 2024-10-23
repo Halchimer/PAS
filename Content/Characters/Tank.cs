@@ -85,7 +85,8 @@ namespace PAS.Content.Characters
         public override void Attack(Character target)
         {
             PlayAnimation("attack");
-            base.Attack(target);
+            if (target != null)
+                target.Damage(Power, this, isPowAttackActive);
         }
 
         /// <summary>

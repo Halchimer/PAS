@@ -155,9 +155,9 @@ namespace PAS.Engine
                 target.Damage(Power, this);
         }
 
-        public void Damage(int amount, Character instigator)
+        public void Damage(int amount, Character instigator, bool ignoreParry = false)
         {
-            if (isParrying)
+            if (isParrying && !ignoreParry)
             {
                 isParrying = false;
                 OnParry(amount, instigator);

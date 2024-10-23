@@ -8,73 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51e2e232-d4d4-49f4-b210-1f461cedc7f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Widgets/Combat/TurnIndicator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PAS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Damager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Healer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Healer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Characters/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Tank.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/WukongBebere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/WukongBebere.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scenes/ClassSelectionScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/ClassSelectionScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scenes/CombatScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/CombatScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scenes/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/CancelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/CancelButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonLeft.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonRight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/ClassSelection/ClassScrollButtonRight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/AbilityButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/AbilityButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Combat/ParryButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Combat/ParryButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/PlayButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/QuitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/QuitButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Actor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/AssetLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/AssetLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Button.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/CustomFont.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CustomFont.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/CustomText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CustomText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/PASEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/PASEventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Scene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/TextActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/TextActor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PAS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PAS.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/PAS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_frame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_frame_stats_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_select_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/class_selector_button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cloud_layer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/combat_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/confetti_particles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-audio-2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-graphics-2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-network-2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-system-2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/csfml-window-2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/damager_sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/font.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/healer_sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/main_menu_button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/mainmenu_sky_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/menu_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/mini_font.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/parry_indicator_effect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tank_sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/victory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/wukong_beber_sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/you_died.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/PAS.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PAS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/PAS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/net6.0/PAS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/net6.0/PAS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/net6.0/PAS.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/net6.0/PAS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/PAS.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/PAS.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/PAS.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/PAS.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/PAS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/PAS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/PAS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/PAS.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/PAS.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/ref/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/ref/PAS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/refint/PAS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/net6.0/refint/PAS.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +141,7 @@
       <workItem from="1729585317977" duration="110000" />
       <workItem from="1729591193198" duration="2709000" />
       <workItem from="1729599674561" duration="5195000" />
-      <workItem from="1729684477522" duration="9346000" />
+      <workItem from="1729684477522" duration="9891000" />
     </task>
     <servers />
   </component>
